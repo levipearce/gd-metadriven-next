@@ -8,12 +8,12 @@ function handleSelect(selectedKey) {
 export default ({pathname}) => (
   <div>
     <Nav bsStyle="pills" className="nav-sidebar" stacked activeHref={pathname}>
-      <NavItem href="/"><Glyphicon glyph="signal"/>Overview</NavItem>
-      <NavItem href="/sales"><Glyphicon glyph="earphone"/>Sales</NavItem>
-      <NavItem href={'/customers'}><Glyphicon glyph="user"/>Customers</NavItem>
-      <NavItem href={'/categories'}><Glyphicon glyph="usd"/>Categories</NavItem>
-      <NavItem href={'/channels'}><Glyphicon glyph="comment"/>Channels</NavItem>
-      <NavItem href={'/stores'}><Glyphicon glyph="shopping-cart"/>Stores</NavItem>
+      <NavItem href="/"><Glyphicon bsStyle="larger" glyph="signal"/>Overview</NavItem>
+      <NavItem href="/sales"><Glyphicon bsStyle="larger" glyph="earphone"/>Sales</NavItem>
+      <NavItem href={'/customers'}><Glyphicon bsStyle="larger" glyph="user"/>Customers</NavItem>
+      <NavItem href={'/categories'}><Glyphicon bsStyle="larger" glyph="usd"/>Categories</NavItem>
+      <NavItem href={'/channels'}><Glyphicon bsStyle="larger" glyph="comment"/>Channels</NavItem>
+      <NavItem href={'/stores'}><Glyphicon bsStyle="larger" glyph="shopping-cart"/>Stores</NavItem>
     </Nav>
 
     { /*language=CSS*/ }
@@ -23,8 +23,12 @@ export default ({pathname}) => (
             padding-right: 10px;
         }
 
+        .glyphicon-larger {
+            font-size: 20px;
+        }
+
         .nav-stacked li {
-            border-bottom-color: lightgray;
+            border-bottom-color: #EEEEEF;
             border-bottom-style: solid;
             border-width: 1px;
             height: 50px;
@@ -51,10 +55,8 @@ export default ({pathname}) => (
 
         .nav-stacked li.active a {
             background-color: white;
-            color: #007BB5;
-            border-top-color: #007BB5;
-            border-top-style: solid;
-            border-top-width: 2px;
+            color: #29A9EC;
+
         }
     `}</style>
 

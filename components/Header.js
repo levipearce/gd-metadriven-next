@@ -22,12 +22,12 @@ export default ({pathname}) => (
         </NavDropdown>
       </Nav>
 
-      <Nav pullRight style={{width: 270}}>
+      <Nav pullRight style={{width: 290}}>
         <Navbar.Text>
-          <Image src="/static/images/avatars/67.jpg" id="avatar" style={{height: 32}} circle />
+          <Image src="/static/images/avatars/67.jpg" id="avatar" style={{height: 42}} circle />
         </Navbar.Text>
 
-        <Navbar.Text style={{marginLeft:0, fontSize: "80%"}}><span style={{color: "#fff"}}>Alan Smith</span><br />Manager</Navbar.Text>
+        <Navbar.Text style={{marginLeft:0, fontSize: "12px"}}><span style={{color: "#fff"}}>Alan Smith</span><br />Manager</Navbar.Text>
 
         <Navbar.Text>
         <Button bsStyle="custom">
@@ -50,6 +50,10 @@ export default ({pathname}) => (
       p.navbar-text {
         margin-top: 6px;
         margin-bottom: 6px;
+      }
+      .btn-custom {
+          background-color: #FF4D74;
+          color: white;
       }
     `}</style>
   </header>

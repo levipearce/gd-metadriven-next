@@ -3,7 +3,7 @@ import {Button, Grid, Row, Col, Nav, NavItem, Glyphicon} from 'react-bootstrap'
 import Header from "../components/Header"
 import SideBar from "../components/SideBar"
 
-export default ({props, children}) => (
+export default ({pathname, children}) => (
 
   <main>
     <Head>
@@ -11,13 +11,13 @@ export default ({props, children}) => (
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css"/>
     </Head>
-    <Header pathname={props.url.pathname}/>
+    <Header pathname={pathname}/>
     <Grid>
       <Row>
-        <Col sm={2}>
-          <SideBar pathname={props.url.pathname}/>
+        <Col className="sidebar-area" sm={2}>
+          <SideBar pathname={pathname}/>
         </Col>
-        <Col sm={10}>
+        <Col className="content-area" sm={10}>
             {children}
         </Col>
       </Row>
@@ -35,13 +35,8 @@ export default ({props, children}) => (
             background-color: #F8F8F8;
         }
 
-        .btn-custom {
-            background-color: #FF4D74;
-            color: white;
-        }
-
         .container {
-            width: 100%;
+            margin: 0;
             padding: 0;
         }
 
@@ -49,6 +44,35 @@ export default ({props, children}) => (
             margin: 0;
             padding: 0;
         }
+
+        div.sidebar-area {
+            padding: 0;
+            background-color: white;
+            border-top-color: #44B5F2;
+            border-top-style: solid;
+            border-top-width: 3px;
+        }
+
+        div.panel {
+            border-radius: 2px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        div.panel-body {
+            padding: 0;
+        }
+
+        div.content-area {
+          padding: 0 20px;
+        }
+
+        .content-area iframe {
+            border-style: none;
+
+        }
+
+
     `}</style>
   </main>
 )

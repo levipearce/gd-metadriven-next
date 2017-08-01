@@ -9,12 +9,18 @@ To start the demo, run:
 ```
 npm run build
 npm start
-
 ```
+and then navigate to `http://localhost:3000`.
 
-And then navigate to `http://localhost:3000`.
+## Development
 
-CSS
+To start the local development server:
+```
+npm run dev
+```
+and then navigate to `http://localhost:3000`.
 
-Component CSS support provided by 
-[styled-jsx https://github.com/zeit/styled-jsx]. 
+###CSS
+
+Component CSS support provided by
+[styled-jsx](https://github.com/zeit/styled-jsx).
