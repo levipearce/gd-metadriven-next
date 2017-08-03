@@ -14,6 +14,7 @@ export default ({pathname}) => (
       <NavItem href={'/categories'}><Glyphicon bsStyle="larger" glyph="usd"/>Categories</NavItem>
       <NavItem href={'/channels'}><Glyphicon bsStyle="larger" glyph="comment"/>Channels</NavItem>
       <NavItem href={'/stores'}><Glyphicon bsStyle="larger" glyph="shopping-cart"/>Stores</NavItem>
+      <NavItem href={'/filters-test'}><Glyphicon bsStyle="larger" glyph="filter"/>Filter Test</NavItem>
     </Nav>
 
     { /*language=CSS*/ }
