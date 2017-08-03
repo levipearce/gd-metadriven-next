@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head' // allows us to modify the HTML header element
+import Router from 'next/router'
 import {Button, Grid, Row, Col, Nav, NavItem, Glyphicon} from 'react-bootstrap'
 import Header from "../components/Header"
 import SideBar from "../components/SideBar"
@@ -9,18 +10,30 @@ import SideBarExt from "../components/SideBarExt"
 export default class App extends React.Component {
 
     render() {
-        console.log(this);
-        let bootStrapCss= "/static/css"+this.props.pathname+"/bootstrap-internal.css";
-        let bootStrapThemeCss= "/static/css"+this.props.pathname+"/bootstrap-theme-internal.css";
+        Router.onRouteChangeStart = (url) => {
+            console.log('App is changing to: ', url)
+        }
+        console.log('App Render');
+        console.log(this.props.pathname.indexOf('external'));
+        let bootStrapCss= null;
+        //let bootStrapThemeCss= null;
+        let style= null;
         let header =null;
         let sidebar=null;
-        if(this.props.pathname == 'internal'){
+        if(this.props.pathname.indexOf('internal')>-1){
+            console.log('Using Internal Components')
             header = (<Header pathname={this.props.pathname}/>);
             sidebar = (<SideBar pathname={this.props.pathname}/>);
+            //bootStrapCss= "/static/css/internal/bootstrap.css";
+            //bootStrapThemeCss= "/static/css/internal/bootstrap-theme.css";
+            style="/static/css/internal/styles.css";
         }else{
             console.log('Using External Components');
             header = (<HeaderExt pathname={this.props.pathname}/>);
             sidebar = (<SideBarExt pathname={this.props.pathname}/>);
+           // bootStrapCss= "/static/css/internal/bootstrap.css";
+           // bootStrapThemeCss= "/static/css/internal/bootstrap-theme.css";
+            style="/static/css/external/styles.css";
         }
       return (  <main>
             <Head>
@@ -28,8 +41,7 @@ export default class App extends React.Component {
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
                 <link rel="stylesheet"
                       href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css"/>
-                <link rel="stylesheet" href={bootStrapCss}/>
-                <link rel="stylesheet" href={bootStrapThemeCss}/>
+                <link rel="stylesheet" href={style}/>
             </Head>
           {header}
             <Grid>
@@ -42,174 +54,6 @@ export default class App extends React.Component {
                     </Col>
                 </Row>
             </Grid>
-
-            <style jsx global>{`
-                * {
-                    font-family: "Open Sans", sans-serif;
-                }
-
-                body {
-                    margin: 0;
-                    padding: 0px 0px;
-                    background-color: #F8F8F8;
-                }
-
-                .container {
-                    margin: 0;
-                    padding: 0;
-                }
-
-                .row {
-                    margin: 0;
-                    padding: 0;
-                }
-
-                div.sidebar-area {
-                    padding: 0;
-                    background-color: white;
-                    border-top-color: #44B5F2;
-                    border-top-style: solid;
-                    border-top-width: 3px;
-                }
-
-                div.panel {
-                    border-radius: 2px;
-                    padding: 20px;
-                    margin: 10px;
-                }
-
-                div.panel-body {
-                    padding: 0;
-                }
-
-                div.content-area {
-                    padding: 0 20px;
-                }
-
-                .content-area iframe {
-                    border-style: none;
-
-                }
-
-                .navbar-inverse .navbar-brand {
-                    color: white;
-                }
-
-                /* Color palette */
-
-                /*:root {
-                    --steel: #7e859a;
-                    --warm-pink: #f14d76;
-                    --dark-sky-blue: #29a9ec;
-                    --white: #ffffff;
-                    --charcoal-grey: #313541;
-                    --dark-blue-grey: #243a57; /* external */
-                /*--sun-yellow: #fed331;*/ /* external */
-                /*--dodger-blue: #47baf6;*/ /* gradient start */
-                /*  --azure: #0b9ae0;*/ /* gradient end */
-                /*}*/
-
-                /* Text styles */
-
-                .navbar-brand-label {
-                    font-family: OpenSans;
-                    font-size: 20px;
-                    color: #ffffff;
-                    /*color: var(--white);*/
-                }
-
-                .navbar-page-title {
-                    font-family: OpenSans;
-                    font-size: 20px;
-                    font-weight: 300;
-                    color: #ffffff;
-                    /*color: var(--white);*/
-                }
-
-                .sidenav-itemtext {
-                    font-family: OpenSans;
-                    font-size: 12px;
-                    font-weight: bold;
-                    color: #313541;
-                    /*color: var(--charcoal-grey);*/
-                }
-
-                .navbar-username {
-                    font-family: OpenSans;
-                    font-size: 12px;
-                    color: #ffffff;
-                    /*   color: var(--white);*/
-                }
-
-                .dashboard-heading-text {
-                    font-family: OpenSans;
-                    font-size: 20px;
-                    font-weight: 600;
-                    color: #313541;
-                    /*color: var(--charcoal-grey);*/
-                }
-
-                .dashboard-breadcrumb-text {
-                    font-family: OpenSans;
-                    font-size: 10px;
-                    color: #7e859a;
-                    /*            color: var(--steel);*/
-                }
-
-                .dashboard-panel-title {
-                    font-family: OpenSans;
-                    font-size: 12px;
-                    font-weight: bold;
-                    color: #ffffff;
-                    /*            color: var(--white);*/
-                }
-
-                .dashboard-metric-box-blue {
-                    width: 160px;
-                    height: 100px;
-                    border-radius: 2px;
-                    background-image: linear-gradient(72deg, #47baf6, #0b9ae0);
-                    /*            background-image: linear-gradient(72deg, var(--dodger-blue), var(--azure));*/
-                    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
-                }
-
-                .dashboard-metric-box-white {
-                    width: 160px;
-                    height: 100px;
-                    border-radius: 2px;
-                    background-color: #ffffff;
-                    /*   background-color: var(--white);*/
-                    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
-                    border: solid 1px #e0e3e8;
-                }
-
-                .dashboard-metric {
-                    font-family: Lato;
-                    font-size: 30px;
-                    font-weight: 300;
-                    color: #ffffff;
-                    /*color: var(--white);*/
-                }
-
-                .dashboard-metric-label {
-                    font-family: OpenSans;
-                    font-size: 10px;
-                    color: #ffffff;
-                    /*color: var(--white);*/
-                }
-
-                .button-see-more {
-                    width: 96px;
-                    height: 27px;
-                    border-radius: 100px;
-                    background-color: #f14d76;
-                    /*background-color: var(warm-pink);*/
-                }
-
-                .navbar-inverse .navbar-nav {
-                    color: white;
-                }
-            `}</style>
         </main> );
     }
 }
