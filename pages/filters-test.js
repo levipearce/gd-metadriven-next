@@ -5,8 +5,8 @@ import {Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} fr
 
 let filter1 = "label.brand.brandcp=BrandCP_wildcard"
 let filter2 = "label.subcategory.subcategorycp=0"
-let fragment = "project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9894"
-let dashboard_url = `https://whitelabeling.gooddata.com/dashboard.html?${filter2}#${fragment}`
+let fragment = "project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9894&nochrome=true"
+let dashboard_url = `https://whitelabeling.gooddata.com/dashboard.html?#${fragment}`
 
 export default class FiltersTest extends React.Component {
   static async getInitialProps (context) {
@@ -28,7 +28,7 @@ export default class FiltersTest extends React.Component {
           </FormControl>
         </FormGroup>
       </Form>
-      <AlertDismissable>
+      <AlertDismissable style="warning">
         <h4>Generated Insight</h4>
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
       </AlertDismissable>
