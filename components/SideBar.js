@@ -7,57 +7,12 @@ function handleSelect(selectedKey) {
 
 export default ({pathname}) => (
   <div>
-    <Nav bsStyle="pills" className="nav-sidebar" stacked activeHref={pathname}>
+    <Nav bsStyle="pills" stacked activeHref={pathname}>
       <NavItem href="/internal"><Glyphicon bsStyle="larger" glyph="stats"/>Overview</NavItem>
       <NavItem href="/internal/sales"><Glyphicon bsStyle="larger" glyph="usd"/>Sales</NavItem>
       <NavItem href="/internal/customers"><Glyphicon bsStyle="larger" glyph="user"/>Customers</NavItem>
       <NavItem href="/internal/products"><Glyphicon bsStyle="larger" glyph="th-large"/>Products</NavItem>
       <NavItem href={'/filters-test'}><Glyphicon bsStyle="larger" glyph="filter"/>Filter Test</NavItem>
     </Nav>
-
-    { /*language=CSS*/ }
-    <style jsx global> {`
-
-        span.glyphicon {
-            padding-right: 10px;
-        }
-
-        .glyphicon-larger {
-            font-size: 20px;
-        }
-
-        .nav-stacked li {
-            border-bottom-color: #EEEEEF;
-            border-bottom-style: solid;
-            border-width: 1px;
-            height: 50px;
-            margin-top: 2px;
-
-        }
-
-        .nav-stacked li.active {
-            margin-top: 0px;
-        }
-
-        .nav-stacked li a {
-            text-transform: uppercase;
-            border-radius: 0;
-            font-weight: Bold;
-            font-size: 12px;
-            color: #313541;
-        }
-
-        .nav-stacked li a:hover, .nav-stacked li.active a:hover {
-            background-color: white;
-            color: #007BB5;
-        }
-
-        .nav-stacked li.active a {
-            background-color: white;
-            color: #29A9EC;
-
-        }
-    `}</style>
-
   </div>
 )

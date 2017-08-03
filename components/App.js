@@ -41,6 +41,7 @@ export default class App extends React.Component {
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"/>
                 <link rel="stylesheet"
                       href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css"/>
+                <link rel="stylesheet" href="/static/css/style-common.css"/>
                 <link rel="stylesheet" href={style}/>
             </Head>
           {header}
