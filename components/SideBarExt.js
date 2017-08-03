@@ -8,10 +8,10 @@ function handleSelect(selectedKey) {
 export default ({pathname}) => (
   <div>
     <Nav bsStyle="pills" className="nav-sidebar" stacked activeHref={pathname}>
-      <NavItem href="/internal"><Glyphicon bsStyle="larger" glyph="stats"/>Overview</NavItem>
-      <NavItem href="/internal/sales"><Glyphicon bsStyle="larger" glyph="usd"/>Sales</NavItem>
-      <NavItem href="/internal/customers"><Glyphicon bsStyle="larger" glyph="user"/>Customers</NavItem>
-      <NavItem href="/internal/products"><Glyphicon bsStyle="larger" glyph="th-large"/>Products</NavItem>
+      <NavItem href="/external"><Glyphicon bsStyle="larger" glyph="stats"/>Overview</NavItem>
+      <NavItem href="/external/sales"><Glyphicon bsStyle="larger" glyph="usd"/>Sales</NavItem>
+      <NavItem href="/external/customers"><Glyphicon bsStyle="larger" glyph="user"/>Customers</NavItem>
+      <NavItem href="/external/products"><Glyphicon bsStyle="larger" glyph="th-large"/>Trends Test</NavItem>
     </Nav>
 
     { /*language=CSS*/ }

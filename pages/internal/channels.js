@@ -1,5 +1,5 @@
-import App from "../components/App"
-import ContentBox from "../components/ContentBox"
+import App from "../../components/App"
+import ContentBox from "../../components/ContentBox"
 
 export default (props) => (
   <App pathname={props.url.pathname} >
