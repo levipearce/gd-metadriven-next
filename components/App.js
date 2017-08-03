@@ -9,7 +9,6 @@ import SideBarExt from "../components/SideBarExt"
 export default class App extends React.Component {
 
     render() {
-        console.log(this);
         let bootStrapCss= "/static/css"+this.props.pathname+"/bootstrap-internal.css";
         let bootStrapThemeCss= "/static/css"+this.props.pathname+"/bootstrap-theme-internal.css";
         let header =null;
