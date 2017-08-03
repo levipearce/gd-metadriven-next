@@ -19,7 +19,7 @@
   "dependencies": {
     "gooddata": "^2.2.0",
     "next": "^2.4.9",
-  "react": "^15.6.1",
+    "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.6.1"
   }

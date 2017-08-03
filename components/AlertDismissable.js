@@ -1,5 +1,7 @@
 /**
  * Created by orourke on 8/2/17.
+ *
+ * Usage: <AlertDismissable style="success|info|warning|danger">content</AlertDismissable>
  */
 
 import React, {Component} from 'react'
@@ -15,12 +17,17 @@ class AlertDismissable extends React.Component {
     if (this.state.alertVisible) {
       return (
         <div>
-          <Alert bsStyle="danger" onDismiss={this.handleAlertDismiss}>
+          <Alert className="etail" bsStyle={this.props.style || 'success'} onDismiss={this.handleAlertDismiss}>
             {this.props.children}
             <p>
-              <Button bsStyle="danger">See More</Button>
+              <Button bsStyle={this.props.style || 'success'}>See More</Button>
             </p>
           </Alert>
+          <style jsx>{`
+              div {
+                    margin: 10px;
+               }
+            `}</style>
         </div>
       );
     }
