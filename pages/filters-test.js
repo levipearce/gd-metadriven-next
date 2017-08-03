@@ -3,39 +3,63 @@ import AlertDismissable from "../components/AlertDismissable"
 import ContentBox from "../components/ContentBox"
 import {Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} from 'react-bootstrap'
 
-let filter1 = "label.brand.brandcp=BrandCP_wildcard"
-let filter2 = "label.subcategory.subcategorycp=0"
-let fragment = "project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9894"
-let dashboard_url = `https://whitelabeling.gooddata.com/dashboard.html?${filter2}#${fragment}`
-
 export default class FiltersTest extends React.Component {
+
+  // This is a special next.js function that runs on the server side only
   static async getInitialProps (context) {
     // context includes: req, res, pathname, etc. see: https://github.com/zeit/next.js#fetching-data-and-component-lifecycle
     return ({
       subcatItems: await getDropdownValues(3093,3095),
-      subcatFilter: 0
     })
   }
+
+  componentWillMount() {
+    this.setState({
+      dashboard_url: "https://whitelabeling.gooddata.com/dashboard.html" +
+      "#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9894&nochrome=true"
+    })
+  }
+
   render() {
-    console.log(this.props)
     return <App pathname={this.props.url.pathname} >
       <Form inline>
         <FormGroup controlId="subCatFilter">
           <ControlLabel>Subcategory:</ControlLabel>
-          <FormControl componentClass="select" placeholder="0">
+          <FormControl componentClass="select" placeholder="0" onChange={this.handleFilterChange.bind(this)}>
             <option value="0">All</option>
-            { this.props.subcatItems.map(item => <option value={item.value}>{item.display}</option>) }
+            { this.props.subcatItems.map(item => <option value={item.value} key={item.value}>{item.display}</option>) }
           </FormControl>
         </FormGroup>
       </Form>
-      <AlertDismissable>
+      <AlertDismissable style="danger">
         <h4>Generated Insight</h4>
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
       </AlertDismissable>
       <ContentBox>
-        <iframe frameBorder="0" src={dashboard_url} width="100%" height="380px" allowTransparency="false"></iframe>
+        {/* TODO: have filter set by dropdown and set the filter variable in state to force refresh.
+            a filter value of 0 would be 'no filter' */}
+        <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="380px" allowTransparency="false"></iframe>
       </ContentBox>
     </App>
+  }
+
+  handleFilterChange (e) {
+
+    // This is the construction of the URL:
+    // https://whitelabeling.gooddata.com/dashboard.html
+    // ?label.subcategory.subcategorycp=SubCategoryCP_wildcard
+    // #project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9894
+    // &nochrome=true
+
+    let new_value = e.target.value
+
+    let host = "https://whitelabeling.gooddata.com/dashboard.html"
+    let fragment = "project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9894"
+    let attribute = "label.subcategory.subcategorycp"
+    let filter = ( new_value != 0 ? `?${attribute}=${new_value}` : '' )
+    let full_url = `${host}${filter}#${fragment}&nochrome=true`
+
+    this.setState({dashboard_url: full_url})
   }
 }
 
