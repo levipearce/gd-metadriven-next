@@ -2,7 +2,6 @@
 GoodData Demo Persona - External Style Customizations
 golden_light #70d09f
 */
-@import "compass/css3";
 
 .nav-stacked li a {
     color: #313541;
@@ -16,7 +15,19 @@ golden_light #70d09f
     color: #fed331;
 
 }
+.dropdown-toggle.btn-default {
+    color: #313541;
+}
+.dropdown-menu li a:hover, .dropdown-menu li.active a:hover {
+    background-color: white;
+    color: #fed311;
+}
 
+.dropdown-menu li.active a {
+    background-color: white;
+    color: #fed311;
+
+}
 .btn-default {
     background-color: #fed331;
     background-image: linear-gradient(to bottom,#fff 0,#fed331 100%);

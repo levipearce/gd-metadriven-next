@@ -90,6 +90,29 @@ span.glyphicon {
     border-radius: 0;
     height: 60px;
 }
+.dropdown-menu {
+
+}
+.dropdown-toggle.btn-default {
+    background-color: white;
+    color: #007BB5;
+    background-image: none;
+    box-shadow: inset 0 0px 0 rgba(255,255,255,.15), 0 0px 0px rgba(0,0,0,.075);
+    border-color: transparent;
+    height: 50px;
+    font-size: 14px;
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li.active a:hover {
+    background-color: white;
+    color: #007BB5;
+}
+
+.dropdown-menu li.active a {
+    background-color: white;
+    color: #29A9EC;
+
+}
 .navbar-default {
 }
 /*
