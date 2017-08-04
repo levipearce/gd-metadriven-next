@@ -1,6 +1,9 @@
 /*
 GoodData Demo Persona - External Style Customizations
+golden_light #70d09f
 */
+@import "compass/css3";
+
 .nav-stacked li a {
     color: #313541;
 }
@@ -18,4 +21,40 @@ GoodData Demo Persona - External Style Customizations
     background-color: #fed331;
     background-image: linear-gradient(to bottom,#fff 0,#fed331 100%);
 }
+.btn-primary {
+    background-color: #7e859a;
+    background-image: linear-gradient(to bottom,#fff 0,#7e859a 0%);
+}
 
+.btn-primary:hover{
+    background-color: #7e859a;
+    background-image: linear-gradient(to bottom,#fff 0,#7e859a 0%);
+}
+
+.alert-default {
+     background-color: rgba(255,211, 49,.35);
+     background-image: none;
+     background-repeat: repeat-x;
+     border-color: #fed331;
+ }
+.alert-primary {
+    background-color: rgba(36,58,87,.35);
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: #243a57;
+}
+.alert-info {
+    background-color: rgba(41,169,236,.35);
+    background-image: none;
+    background-repeat: repeat-x;
+    border-color: #29a9ec;
+}
+.gd-custom-navbar-text {
+    color: #243a57;
+}
+.navbar-default .navbar-text {
+    color: #243a57;
+}
+.gd-custom-breadcrumb {
+    color: #243a57;
+}

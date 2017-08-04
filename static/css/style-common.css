@@ -98,6 +98,7 @@ GoodData Custom Breadcrumb Components
 .gd-custom-breadcrumb {
     margin: 0px;
     background: transparent;
+    background-color: none;
 }
 /*
 GoodData Custom Navigation Components
@@ -107,6 +108,7 @@ GoodData Custom Navigation Components
     margin: 0px;
     border: 0px;
     background: transparent;
+    box-shadow: none;
 }
 .gd-custom-navbar {
     margin: 0px;
@@ -116,4 +118,11 @@ GoodData Custom Navigation Components
 }
 .gd-custom-navbar-text {
     margin: 0px;
+}
+
+.button-see-more {
+    width: 96px;
+    height: 27px;
+    border-radius: 100px;
+    background-color: #f14d76;
 }
