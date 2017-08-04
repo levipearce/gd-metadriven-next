@@ -5,7 +5,7 @@ import {Breadcrumb,BreadcrumbItem} from 'react-bootstrap'
 export default (props) => (
   <App pathname={props.url.pathname} >
       <Breadcrumb>
-          <Breadcrumb.Item href="/external">
+          <Breadcrumb.Item>
               Overview
           </Breadcrumb.Item>
           <Breadcrumb.Item active>

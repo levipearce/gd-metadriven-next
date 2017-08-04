@@ -1,4 +1,4 @@
-import App from "../../components/AppExt"
+import App from "../../components/App"
 import {ContextBox, Panel, Breadcrumb} from 'react-bootstrap'
 
 export default (props) => (

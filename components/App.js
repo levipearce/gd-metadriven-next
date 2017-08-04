@@ -11,9 +11,9 @@ export default class App extends React.Component {
 
     render() {
         Router.onRouteChangeStart = (url) => {
-            console.log('App is changing to: ', url)
+            console.log('AppLogin is changing to: ', url)
         }
-        console.log('App Render');
+        console.log('AppLogin Render');
         console.log(this.props.pathname.indexOf('external'));
         let bootStrapCss= null;
         //let bootStrapThemeCss= null;

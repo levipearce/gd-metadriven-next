@@ -20,7 +20,7 @@ export default ({pathname}) => (
         <Navbar.Text style={{marginLeft:0, fontSize: "12px"}}>Alan Smith<br />Manager</Navbar.Text>
 
         <Navbar.Text>
-        <Button bsStyle="danger">
+        <Button bsStyle="danger" href="/">
           Logout{' '}
           <Glyphicon glyph="log-out"/>
         </Button>
