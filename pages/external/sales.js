@@ -20,7 +20,7 @@ export default (props) => (
           </Row>
           <Row>
               <Col sm={5}>
-                  <DashboardNavHeader title="Sales & Revenue"  button="false" path="/external/sales" customClass="button-see-more"/>
+                  <DashboardNavHeader title="Sales & Revenue" customClass="button-see-more"/>
               </Col>
               <Col sm={5}>
                   Filters go here
@@ -43,7 +43,7 @@ export default (props) => (
           </Row>
           <Row>
               <Col sm={10}>
-                  <DashboardNavHeader title="Benchmarks" button="false" path="/external/trends"  customClass="button-see-more"/>
+                  <DashboardNavHeader title="Benchmarks" customClass="button-see-more"/>
               </Col>
           </Row>
           <Row>

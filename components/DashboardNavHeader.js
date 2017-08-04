@@ -10,7 +10,7 @@ export default class DashboardNavHeader extends React.Component {
     }
 
     render() {
-        alert(this.props.button);
+        console.log(this.props.path);
         let button = this.props.path !== null && this.props.path!== undefined? (<Button bsStyle="primary" bsSize="small" href={this.props.path} className={this.props.customClass}>See
             More</Button>):null;
         return (<Panel className="gd-custom-panel-navigation">
