@@ -20,12 +20,13 @@ class AlertDismissable extends React.Component {
           <Alert className="etail" bsStyle={this.props.style || 'success'} onDismiss={this.handleAlertDismiss}>
             {this.props.children}
             <p>
-              <Button bsStyle={this.props.style || 'success'}>See More</Button>
+              <Button href={this.props.link} bsStyle={this.props.style || 'success'}>See More</Button>
             </p>
           </Alert>
           <style jsx>{`
               div {
                     margin: 10px;
+                    width: 1000px;
                }
             `}</style>
         </div>

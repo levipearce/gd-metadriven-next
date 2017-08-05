@@ -1,7 +1,8 @@
 import App from "../components/App"
 import AlertDismissable from "../components/AlertDismissable"
+
 import ContentBox from "../components/ContentBox"
-import {Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} from 'react-bootstrap'
+import {Breadcrumb, Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} from 'react-bootstrap'
 
 export default class FiltersTest extends React.Component {
 
@@ -38,7 +39,7 @@ export default class FiltersTest extends React.Component {
       <ContentBox>
         {/* TODO: have filter set by dropdown and set the filter variable in state to force refresh.
             a filter value of 0 would be 'no filter' */}
-        <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="380px" allowTransparency="false"></iframe>
+        <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="750px" allowTransparency="false"></iframe>
       </ContentBox>
     </App>
   }
