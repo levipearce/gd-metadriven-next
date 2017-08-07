@@ -10,17 +10,21 @@ export default class HeaderExt extends React.Component {
 
             <header>
                 <Navbar fluid inverse>
-                    <Navbar.Text>Company Name</Navbar.Text>
-
+                    <Navbar.Text>
+                        <Image src="/static/images/external_logo.jpg" style={{height: 32}} circle/>
+                    </Navbar.Text>
+                    <Navbar.Text id="company-name">
+                        Fashion Co.
+                    </Navbar.Text>
                     <Nav pullRight style={{width: 400}}>
                         <Navbar.Text>
-                            <Image src="/static/images/avatars/67.jpg" id="avatar" style={{height: 42}} circle/>
+                            <Image src="/static/images/avatars/31.jpg" id="avatar" style={{height: 32}} circle/>
                         </Navbar.Text>
 
                         <Navbar.Text style={{marginLeft: 0, fontSize: "12px"}}>Brian Moody<br/>Fashion Co Brand Manager</Navbar.Text>
 
                         <Navbar.Text>
-                            <Button bsStyle="warning" href="/">
+                            <Button bsStyle="default" href="/">
                                 Logout{' '}
                                 <Glyphicon glyph="log-out"/>
                             </Button>

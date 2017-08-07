@@ -4,12 +4,8 @@ import {Nav, Navbar, NavDropdown, MenuItem, NavItem, Button, Image, Glyphicon} f
 export default ({pathname}) => (
   <header >
     <Navbar fluid inverse>
-      <Navbar.Header>
-        <Navbar.Brand>
-          <img alt="Brand" src="/static/images/logo.svg"/>
-        </Navbar.Brand>
-      </Navbar.Header>
-      <Navbar.Text>GoodRetail</Navbar.Text>
+      <Navbar.Text>
+        <img alt="Brand" src="/static/images/internal_log.jpg"/>GoodRetail</Navbar.Text>
       <Navbar.Text>Women's Activewear</Navbar.Text>
 
       <Nav pullRight style={{width: 290}}>

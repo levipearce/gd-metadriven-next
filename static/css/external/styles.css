@@ -3,6 +3,9 @@ GoodData Demo Persona - External Style Customizations
 golden_light #70d09f
 */
 
+div.sidebar-area {
+    border-top-color: #fed331;
+}
 .nav-stacked li a {
     color: #313541;
 }
@@ -18,9 +21,13 @@ golden_light #70d09f
 .dropdown-toggle.btn-default {
     color: #313541;
 }
+.dropdown:hover{
+    color: #fed331;
+}
 .dropdown-menu li a:hover, .dropdown-menu li.active a:hover {
     background-color: white;
     color: #fed311;
+
 }
 
 .dropdown-menu li.active a {
@@ -66,6 +73,21 @@ golden_light #70d09f
 .navbar-default .navbar-text {
     color: #243a57;
 }
+.breadcrumb > li + li:before {
+    color: #7e859a;
+}
 .gd-custom-breadcrumb {
-    color: #243a57;
+    color: #7e859a;
+}
+
+#glyphicon-text{
+    padding-left:10px;
+    font-size:14px;
+    font-weight: bold;
+    font-family: "Open Sans",sans-serif;
+}
+
+#company-name{
+    padding-left: 20px;
+    font-size: 20px;
 }

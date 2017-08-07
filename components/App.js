@@ -44,8 +44,12 @@ export default class App extends React.Component {
                 <link rel="stylesheet" href="/static/css/style-common.css"/>
                 <link rel="stylesheet" href={style}/>
             </Head>
-          {header}
-            <Grid>
+            <Grid fluid>
+                <Row>
+                    <Col sm={12}>
+                        {header}
+                    </Col>
+                </Row>
                 <Row>
                     <Col className="sidebar-area" sm={2}>
                         {sidebar}
