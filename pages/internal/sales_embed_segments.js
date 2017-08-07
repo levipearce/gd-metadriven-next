@@ -1,8 +1,7 @@
 import App from "../../components/App"
-import PanelDismissable from "../../components/PanelDismissable"
+import AlertDismissable from "../../components/AlertDismissable"
 import ContentBox from "../../components/ContentBox"
 import {Breadcrumb, Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} from 'react-bootstrap'
-import DashboardFilterHeader from "../../components/DashboardFilterHeader";
 
 export default class FiltersTest extends React.Component {
 
@@ -32,20 +31,19 @@ export default class FiltersTest extends React.Component {
           Sales
         </Breadcrumb.Item>
       </Breadcrumb>
-      <DashboardFilterHeader title="Sales">
       <Form inline>
         <FormGroup controlId="subCatFilter">
           <ControlLabel>Subcategory:</ControlLabel>
-          <FormControl componentClass="select" placeholder="0" className="gd-custom-filter" onChange={this.handleFilterChange.bind(this)}>
+          <FormControl componentClass="select" placeholder="0" onChange={this.handleFilterChange.bind(this)}>
             <option value="0">All</option>
             { this.props.subcatItems.map(item => <option value={item.value} key={item.value}>{item.display}</option>) }
           </FormControl>
         </FormGroup>
       </Form>
-      </DashboardFilterHeader>
-      <PanelDismissable header="Sales Alert" bsStyle="danger">
+      <AlertDismissable style="danger">
+        <h4>Generated Insight</h4>
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
-      </PanelDismissable>
+      </AlertDismissable>
       <ContentBox>
         <iframe frameBorder="0" src={this.state.dashboard_url} width="974px" height="760px" allowTransparency="false"></iframe>
       </ContentBox>

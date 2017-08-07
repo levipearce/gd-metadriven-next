@@ -35,18 +35,19 @@ div.sidebar-area {
     color: #fed311;
 
 }
-.btn-default {
+.btn-default, .btn-default:hover {
     background-color: #fed331;
-    background-image: linear-gradient(to bottom,#fff 0,#fed331 100%);
+    background-image: none;
+    text-shadow: 0 0 0 #fff;
+    box-shadow: inset 0 0px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+    border: 0px;
 }
-.btn-primary {
+.btn-primary, .btn-primary:hover {
     background-color: #7e859a;
-    background-image: linear-gradient(to bottom,#fff 0,#7e859a 0%);
-}
-
-.btn-primary:hover{
-    background-color: #7e859a;
-    background-image: linear-gradient(to bottom,#fff 0,#7e859a 0%);
+    background-image: none;
+    text-shadow: 0 0 0 #fff;
+    box-shadow: inset 0 0px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+    border: 0px;
 }
 
 .alert-default {
@@ -73,12 +74,7 @@ div.sidebar-area {
 .navbar-default .navbar-text {
     color: #243a57;
 }
-.breadcrumb > li + li:before {
-    color: #7e859a;
-}
-.gd-custom-breadcrumb {
-    color: #7e859a;
-}
+
 
 #glyphicon-text{
     padding-left:10px;
@@ -90,4 +86,6 @@ div.sidebar-area {
 #company-name{
     padding-left: 20px;
     font-size: 20px;
+    font-weight: normal;
+    color: white;
 }

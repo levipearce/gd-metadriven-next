@@ -5,8 +5,10 @@ export default ({pathname}) => (
   <header >
     <Navbar fluid inverse>
       <Navbar.Text>
-        <img alt="Brand" src="/static/images/internal_log.jpg"/>GoodRetail</Navbar.Text>
-      <Navbar.Text>Women's Activewear</Navbar.Text>
+        <img alt="Brand" src="/static/images/internal_logo.png"/>
+      </Navbar.Text>
+      <Navbar.Text id="company-name" className="gd-custom-heading">GoodRetail</Navbar.Text>
+      <Navbar.Text className="gd-custom-heading">Women's Activewear</Navbar.Text>
 
       <Nav pullRight style={{width: 290}}>
         <Navbar.Text>
@@ -16,7 +18,7 @@ export default ({pathname}) => (
         <Navbar.Text style={{marginLeft:0, fontSize: "12px"}}>Alan Smith<br />Manager</Navbar.Text>
 
         <Navbar.Text>
-        <Button bsStyle="danger" href="/">
+        <Button href="/">
           Logout{' '}
           <Glyphicon glyph="log-out"/>
         </Button>

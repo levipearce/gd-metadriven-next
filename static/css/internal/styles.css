@@ -14,7 +14,7 @@ GoodData Demo Persona - Internal Style Customizations
 
 }
 
-.btn-default{
+.btn-default, .btn-default:hover{
     background-color: #f14d76;
     /*background-image: linear-gradient(to bottom,#fff 0,#f14d76 20%);*/
     background-image: none;

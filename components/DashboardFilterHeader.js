@@ -11,10 +11,10 @@ export default class DashboardFilterHeader extends React.Component {
     render() {
         return (<Panel bsClass="gd-custom-dashboard-header">
             <Navbar fluid className="gd-custom-navbar">
-                <Navbar.Text>
+                <Navbar.Text className="gd-custom-navbar-text">
                     {this.props.title}
                 </Navbar.Text>
-                <Nav pullRight style={{width: 500}}>
+                <Nav pullRight>
                   {this.props.children}
                 </Nav>
             </Navbar>
