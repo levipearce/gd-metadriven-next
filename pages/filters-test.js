@@ -1,7 +1,8 @@
 import App from "../components/App"
 import AlertDismissable from "../components/AlertDismissable"
-
 import ContentBox from "../components/ContentBox"
+import DashboardFilterHeader from "../components/DashboardFilterHeader"
+import FilterSelector from "../components/FilterSelector"
 import {Breadcrumb, Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} from 'react-bootstrap'
 
 export default class FiltersTest extends React.Component {
@@ -11,6 +12,7 @@ export default class FiltersTest extends React.Component {
     // context includes: req, res, pathname, etc. see: https://github.com/zeit/next.js#fetching-data-and-component-lifecycle
     return ({
       subcatItems: await getDropdownValues(3093,3095),
+      productTypes: await getDropdownValues(10174,2960)
     })
   }
 
@@ -23,15 +25,8 @@ export default class FiltersTest extends React.Component {
 
   render() {
     return <App pathname={this.props.url.pathname} >
-      <Form inline>
-        <FormGroup controlId="subCatFilter">
-          <ControlLabel>Subcategory:</ControlLabel>
-          <FormControl componentClass="select" placeholder="0" onChange={this.handleFilterChange.bind(this)}>
-            <option value="0">All</option>
-            { this.props.subcatItems.map(item => <option value={item.value} key={item.value}>{item.display}</option>) }
-          </FormControl>
-        </FormGroup>
-      </Form>
+      <FilterSelector label="Subcategory" items={this.props.subcatItems} onChange={this.handleFilterChange.bind(this)} />
+      <FilterSelector label="Product Type" items={this.props.productTypes} onChange={this.handleFilterChange.bind(this)} />
       <AlertDismissable style="danger">
         <h4>Generated Insight</h4>
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>

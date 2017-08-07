@@ -16,6 +16,16 @@
   ],
   "author": "",
   "license": "MIT",
+  "proxy": {
+    "/gdc": {
+      "changeOrigin": true,
+      "cookieDomainRewrite": "localhost",
+      "target": "https://whitelabeling.gooddata.com/"
+    },
+    "/account.html": {
+      "target": "https://whitelabeling.gooddata.com/"
+    }
+  },
   "dependencies": {
     "gooddata": "^2.2.0",
     "next": "^2.4.9",

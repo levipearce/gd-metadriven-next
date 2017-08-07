@@ -45,8 +45,6 @@ export default class FiltersTest extends React.Component {
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
       </AlertDismissable>
       <ContentBox>
-        {/* TODO: have filter set by dropdown and set the filter variable in state to force refresh.
-         a filter value of 0 would be 'no filter' */}
         <iframe frameBorder="0" src={this.state.dashboard_url} width="974px" height="760px" allowTransparency="false"></iframe>
       </ContentBox>
     </App>
