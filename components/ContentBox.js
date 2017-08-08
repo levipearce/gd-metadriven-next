@@ -7,13 +7,15 @@ import {Nav, Navbar, NavDropdown, MenuItem, NavItem, Panel, Button, Image, Glyph
 
 export default ({children}) => (
   <div>
-  <Panel>
-    {children}
-  </Panel>
+    <div className="contentBox">
+      {children}
+    </div>
     <style jsx>{`
               div {
-                    width: 1020px;
+                    width: 942px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
                }
             `}</style>
-    </div>
+  </div>
 )

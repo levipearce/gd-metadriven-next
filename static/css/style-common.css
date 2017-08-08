@@ -147,21 +147,19 @@ GoodData Custom Breadcrumb Components
     content: "> ";
     padding: 0 5px;
 }
-.gd-custom-breadcrumb {
-    margin: 0px;
-    fond-size: 10px;
-    background-color: transparent;
-}
 
 .breadcrumb > li + li:before {
     color: #7e859a;
 }
 .gd-custom-breadcrumb {
+    margin: 0px;
     color: #7e859a;
+    background-color: transparent;
     font-size: 10px;
     text-transform: uppercase;
     font-family: Open Sans, sans-serif;
     padding-left: 0px;
+
 }
 /*
 GoodData Custom Navigation Components
