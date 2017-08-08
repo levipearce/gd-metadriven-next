@@ -74,18 +74,28 @@ div.sidebar-area {
 .navbar-default .navbar-text {
     color: #243a57;
 }
-
-
-#glyphicon-text{
-    padding-left:10px;
-    font-size:14px;
-    font-weight: bold;
-    font-family: "Open Sans",sans-serif;
+.panel-default>.panel-heading {
+    color: #313541;
+    background-color: #fed331;
+    border-color: #313541;
+    background-image:none;
+    border-radius: 0px;
+    border-bottom: 0px solid transparent;
 }
-
-#company-name{
-    padding-left: 20px;
-    font-size: 20px;
-    font-weight: normal;
-    color: white;
+.alertPanel-info, .alertPanel-default, .alertPanel-primary{
+    background: transparent url("/static/images/alert_info_black.png") no-repeat;
+    opacity: 1;
+    border: none;
+    height: 14px;
+    width: 15px;
+}
+.closePanel-default {
+    background: transparent url("/static/images/alert_close_black.png")  no-repeat;
+    opacity: 1;
+    border: none;
+    height: 16px;
+    width: 17px;
+}
+.form-control{
+    color: #313541;
 }

@@ -1,6 +1,5 @@
 import App from "../../components/App"
-import DashboardNavHeader from "../../components/DashboardNavHeader"
-import AlertDismissable from "../../components/AlertDismissable"
+import FilterSelector from "../../components/FilterSelector"
 import PanelDismissable from "../../components/PanelDismissable"
 import DashboardFilterHeader from "../../components/DashboardFilterHeader"
 import {ContextBox, Grid, Row,Col, Breadcrumb} from 'react-bootstrap'
@@ -14,6 +13,20 @@ export default (props) => (
             Overview
           </Breadcrumb.Item>
         </Breadcrumb>
+      </Row>
+      <Row>
+        <Col sm={12}>
+          <DashboardFilterHeader title="Sales & Revenue" path="/external/sales">
+            <FilterSelector label="Season" items={[]} onChange={null} />
+          </DashboardFilterHeader>
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={12}>
+          <PanelDismissable header="Sales Alert" bsStyle="default">
+            <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
+          </PanelDismissable>
+        </Col>
       </Row>
       <Row>
         <Col sm={12}>

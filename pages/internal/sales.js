@@ -46,9 +46,8 @@ export default class FiltersTest extends React.Component {
       <PanelDismissable header="Sales Alert" bsStyle="danger">
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
       </PanelDismissable>
-      <ContentBox>
-        <iframe frameBorder="0" src={this.state.dashboard_url} width="974px" height="760px" allowTransparency="false"></iframe>
-      </ContentBox>
+        <iframe frameBorder="0" src={this.state.dashboard_url} width="974px" height="760px" allowTransparency="true"></iframe>
+
     </App>
   }
 

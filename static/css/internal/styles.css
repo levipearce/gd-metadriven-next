@@ -29,3 +29,17 @@ GoodData Demo Persona - Internal Style Customizations
     border-radius: 100px;
     background-color: #f14d76;
 }
+.panel-danger>.panel-heading {
+    color: white;
+    background-color: #f14d76;
+    border-color: #f14d76;
+    background-image:none;
+    border-radius: 0px;
+}
+.panel-info>.panel-heading {
+    color: white;
+    background-color: #47baf6;
+    border-color: #47baf6;
+    background-image:none;
+    border-radius: 0px;
+}

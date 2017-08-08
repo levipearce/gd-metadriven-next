@@ -19,7 +19,7 @@ class PanelDismissable extends React.Component {
             return (
                 <div>
                     <Button bsStyle={this.props.bsStyle} bsClass="alertPanel"></Button>
-                    <Button bsClass="closePanel" onClick={ this.handlePanelDismiss}>X</Button>
+                    <Button bsClass="closePanel" onClick={ this.handlePanelDismiss}></Button>
                     <Panel bsStyle={this.props.bsStyle} className="dismissable" collapsible header={this.props.header} expanded={this.state.panelVisible}>
                         {this.props.children}
                     </Panel>

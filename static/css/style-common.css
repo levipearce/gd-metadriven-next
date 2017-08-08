@@ -1,3 +1,6 @@
+/*
+General Layout Styles
+*/
 * {
     font-family: "Open Sans", sans-serif;
 }
@@ -16,6 +19,9 @@ body {
     margin: 0;
     padding: 0;
 }
+/*
+Customizing Grid Components
+*/
 .col-sm-12 {
     margin: 0;
     padding-left: 0px;
@@ -25,12 +31,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/*div.panel {
-    border-radius: 2px;
-    padding: 20px;
-    margin: 10px;
-}*/
 
 div.panel-body {
     padding: 0;
@@ -71,7 +71,9 @@ span.glyphicon {
     margin-top: 2px;
 
 }
-
+/*
+Customizing Stacked Navbars
+*/
 .nav-stacked li.active {
     margin-top: 0px;
 }
@@ -96,6 +98,9 @@ span.glyphicon {
     color: #29A9EC;
 
 }
+/*
+Customizing NavBar Inverse styles
+*/
 .navbar-inverse {
     background-color: #313541;
     color: white;
@@ -104,13 +109,15 @@ span.glyphicon {
     border-radius: 0;
     height: 60px;
 }
+/*
+Customizing bootstrap Navbar Dropdown components
+*/
 .dropdown:hover .dropdown-menu {
 
 }
 .dropdown-toggle.btn-default {
     background-color: white;
     color: #007BB5;
-    background-image: none;
     box-shadow: inset 0 0px 0 rgba(255,255,255,.15), 0 0px 0px rgba(0,0,0,.075);
     border-color: transparent;
     height: 50px;
@@ -132,8 +139,6 @@ span.glyphicon {
     color: #29A9EC;
 
 }
-.navbar-default {
-}
 /*
 GoodData Custom Breadcrumb Components
 */
@@ -145,8 +150,18 @@ GoodData Custom Breadcrumb Components
 .gd-custom-breadcrumb {
     margin: 0px;
     fond-size: 10px;
-    background: transparent;
-    background-color: none;
+    background-color: transparent;
+}
+
+.breadcrumb > li + li:before {
+    color: #7e859a;
+}
+.gd-custom-breadcrumb {
+    color: #7e859a;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: Open Sans, sans-serif;
+    padding-left: 0px;
 }
 /*
 GoodData Custom Navigation Components
@@ -167,14 +182,13 @@ GoodData Custom Navigation Components
 }
 .gd-custom-navbar-text {
     margin: 0px;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
-.breadcrumb > li + li:before {
-    color: #7e859a;
-}
-.gd-custom-breadcrumb {
-    color: #7e859a;
-}
-
+/*
+Styles to customer DashboardNavHeader buttons via custom class
+*/
 .button-see-more {
     width: 96px;
     height: 27px;
@@ -182,6 +196,9 @@ GoodData Custom Navigation Components
     background-color: #f14d76;
     font-weight: normal;
 }
+/*
+Styles for PanelDismissable Component
+*/
 .alertPanel {
     float: left;
     font-size: 14px;
@@ -197,20 +214,15 @@ GoodData Custom Navigation Components
     left: 15px;
 }
 
-.alertPanel-info, alertPanel-primary{
-    background-color: transparent;
-    background-image: url("/static/images/alert_info.png");
+.alertPanel-info, .alertPanel-primary{
+    background: transparent url("/static/images/alert_info_white.png") no-repeat;
     opacity: 1;
     border: none;
     height: 14px;
     width: 15px;
 }
-.alertPanel-warning {
-    background-image: url("/static/images/alert_danger.png");
-}
-.alertPanel-danger, alertPanel-warning {
-    background-color: transparent;
-    background-image: url("/static/images/alert_danger.png");
+.alertPanel-danger, .alertPanel-warning {
+    background: transparent url("/static/images/alert_warning_white.png") no-repeat;
     opacity: 1;
     border: none;
     height: 14px;
@@ -225,12 +237,15 @@ GoodData Custom Navigation Components
     font-weight: 700;
     line-height: 1;
     color: #000;
-    text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
-    opacity: .2;
+    text-shadow: 0 0px 0 #fff;
     position: relative;
     top: 10px;
     right: 15px;
+    background: transparent url("/static/images/alert_close_white.png");
+    opacity: 1;
+    border: none;
+    height: 16px;
+    width: 17px;
 }
 .collapse.in{
      margin: 0px;
@@ -238,7 +253,7 @@ GoodData Custom Navigation Components
 }
 
 .gd-custom-heading{
-    padding-left: 20px;
+    padding-left: 0px;
     font-size: 20px;
     font-weight: normal;
     color: white;
@@ -246,11 +261,14 @@ GoodData Custom Navigation Components
 .gd-custom-heading.navbar-text{
     color: white;
 }
+/*
+Styles for form controls
+*/
 .control-label{
-    padding-right: 20px;
-    font-size: 10px;
-    font-weight: normal;
+    padding-right: 2px;
+    font-size: 12px;
     color: #7e859a;
+    text-align: right;
 }
 .form-control{
     color: #29a9ec;
@@ -272,4 +290,48 @@ select.gd-custom-filter:active {
     background-color:transparent;
     border-radius: 0px;
     box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+}
+
+/*
+Used to Style text contained with <glyphicon> tags
+*/
+#glyphicon-text{
+    padding-left:10px;
+    font-size:14px;
+    font-weight: bold;
+    font-family: "Open Sans",sans-serif;
+}
+
+/*
+Header components reference by ID
+*/
+#company-name{
+    padding-top: 7px;
+    margin: 0px;
+    vertical-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+}
+#product-category{
+    padding-top: 7px;
+    padding-left: 42px;
+    vertical-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+}
+#user{
+    padding-left: 0px;
+    vertical-align: center;
+    font-size: 12px;
+    font-weight: normal;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+}
+#avatar{
+    border: 2px solid white;
+    height: 42px;
 }
