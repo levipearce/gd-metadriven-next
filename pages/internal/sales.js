@@ -1,6 +1,6 @@
 import App from "../../components/App"
 import PanelDismissable from "../../components/PanelDismissable"
-import ContentBox from "../../components/ContentBox"
+import FilterSelector from "../../components/FilterSelector"
 import {Breadcrumb, Form, ControlLabel, FormControl, FormGroup, Panel, Button, Glyphicon} from 'react-bootstrap'
 import DashboardFilterHeader from "../../components/DashboardFilterHeader";
 
@@ -33,18 +33,10 @@ export default class FiltersTest extends React.Component {
         </Breadcrumb.Item>
       </Breadcrumb>
       <DashboardFilterHeader title="Sales">
-      <Form inline>
-        <FormGroup controlId="subCatFilter">
-          <ControlLabel>Subcategory:</ControlLabel>
-          <FormControl componentClass="select" placeholder="0" className="gd-custom-filter" onChange={this.handleFilterChange.bind(this)}>
-            <option value="0">All</option>
-            { this.props.subcatItems.map(item => <option value={item.value} key={item.value}>{item.display}</option>) }
-          </FormControl>
-        </FormGroup>
-      </Form>
+       <FilterSelector label="Subcategory" items={this.props.subcatItems} onChange={this.handleFilterChange} class="filter-right-align" />
       </DashboardFilterHeader>
       <PanelDismissable header="Sales Alert" bsStyle="danger">
-        <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
+        <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets. <a>test link</a></p>
       </PanelDismissable>
         <iframe frameBorder="0" src={this.state.dashboard_url} width="974px" height="760px" allowTransparency="true"></iframe>
 

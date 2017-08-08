@@ -9,13 +9,16 @@ export default class DashboardFilterHeader extends React.Component {
     }
 
     render() {
+        console.log("Path", this.props.path);
+        let button = this.props.path !== null && this.props.path!== undefined? (<Button bsStyle={this.props.style} bsSize="small" href={this.props.path} className={this.props.customClass}>See
+            More</Button>):null;
         return (<Panel bsClass="gd-custom-dashboard-header">
             <Navbar fluid className="gd-custom-navbar">
                 <Navbar.Text className="gd-custom-navbar-text">
                     {this.props.title}
-                  { this.props.button != undefined ? this.props.button() : null }
                 </Navbar.Text>
-                <Nav pullRight>
+                <Navbar.Text>{button}</Navbar.Text>
+                <Nav pullRight style={{width:400}}>
                   {this.props.children}
                 </Nav>
             </Navbar>

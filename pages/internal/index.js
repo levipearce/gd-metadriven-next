@@ -17,8 +17,8 @@ export default (props) => (
       </Breadcrumb.Item>
     </Breadcrumb>
 
-    <DashboardFilterHeader title="Sales">
-      <FilterSelector label="Select Period" items={[]} onChange={null} />
+    <DashboardFilterHeader title="Sales" path="/internal/sales" customClass="button-see-more">
+      <FilterSelector label="Select Period" items={[]} onChange={null} class="filter-right-align" />
     </DashboardFilterHeader>
     <PanelDismissable header="Alert" link="/internal/sales" bsStyle="info">
       <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>

@@ -16,8 +16,8 @@ export default (props) => (
       </Row>
       <Row>
         <Col sm={12}>
-          <DashboardFilterHeader title="Sales & Revenue" path="/external/sales">
-            <FilterSelector label="Season" items={[]} onChange={null} />
+          <DashboardFilterHeader title="Sales & Revenue" path="/external/sales" customClass="button-see-more" class="filter-right-align" >
+            <FilterSelector label="Season" items={[]} onChange={null} class="filter-right-align" />
           </DashboardFilterHeader>
         </Col>
       </Row>
