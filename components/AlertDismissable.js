@@ -17,7 +17,7 @@ class AlertDismissable extends React.Component {
     if (this.state.alertVisible) {
       return (
         <div>
-          <Alert className="etail" bsStyle={this.props.style || 'success'} onDismiss={this.handleAlertDismiss}>
+          <Alert bsStyle={this.props.style || 'success'} onDismiss={this.handleAlertDismiss}>
             {this.props.children}
             <p>
               <Button href={this.props.link} bsStyle={this.props.style || 'success'}>See More</Button>

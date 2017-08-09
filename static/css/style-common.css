@@ -192,6 +192,11 @@ GoodData Custom Breadcrumb Components
 /*
 GoodData Custom Navigation Components
 */
+
+.gd-custom-dashboard-header {
+    width: 942px; /* TODO: Remove when no more iFrames */
+}
+
 .gd-custom-panel-navigation.panel.panel-default{
     padding: 0px;
     margin: 0px;
@@ -231,7 +236,9 @@ Styles for PanelDismissable Component
 */
 .dismissable{
     margin-bottom: 10px;
+    width: 942px; /* TODO: Remove when fixed width no longer needed */
 }
+
 .alertPanel {
     float: left;
     font-size: 14px;
@@ -261,23 +268,27 @@ Styles for PanelDismissable Component
     height: 14px;
     width: 15px;
 }
+.dismissable .panel-heading {
+    height 32px; !important;
+}
+.dismissable .panel-heading h4 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
 .panel-danger>.panel-heading {
     color: white;
     background-color: #f14d76;
     border-color: #f14d76;
     background-image:none;
     border-radius: 0px;
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
 }
 .panel-danger>.panel-heading+.panel-collapse>.panel-body {
     color: #7e859a;
-    font-family: "Open Sans";
-    font-size: 12px;
-    margin-top: 18px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 
 .panel-info>.panel-heading {
@@ -286,39 +297,34 @@ Styles for PanelDismissable Component
     border-color: #47baf6;
     background-image:none;
     border-radius: 0px;
-    font-family: "Open Sans";
-    font-weight: bold;
-    font-size: 12px;
-    text-transform: uppercase;
 }
 
 .panel-info>.panel-heading+.panel-collapse>.panel-body {
     color: #7e859a;
     font-family: "Open Sans";
     font-size: 12px;
-    margin-top: 18px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
     color: #7e859a;
     font-family: "Open Sans";
     font-size: 12px;
-    margin-top: 18px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 .panel>.panel-collapse>.panel-body>p>a {
     color: #29a9ec;
     font-family: "Open Sans";
     font-size: 12px;
     font-weight: 600;
-    margin-top: 18px;
-    margin-bottom: 20px;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 .panel-title{
     padding-left: 20px;
 }
 .closePanel-default {
-    float: right;
     font-size: 14px;
     font-weight: 700;
     line-height: 1;
@@ -326,7 +332,10 @@ Styles for PanelDismissable Component
     text-shadow: 0 0px 0 #fff;
     position: relative;
     top: 10px;
-    right: 15px;
+    /* float: right;
+    right: 15px; */
+    float: left; /* TODO: remove when fixed size not needed */
+    left: 890px; /* TODO: remove when fixed size not needed */
     background: transparent url("/static/images/alert_close_white.png");
     opacity: 1;
     border: none;
@@ -419,10 +428,11 @@ Header components reference by ID
     padding-left: 15px;
     margin-left: 0px;
     vertical-align: center;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 13px;
+    font-weight: normal;
     color: white;
     font-family: "Open Sans",sans-serif;
+    text-transform: uppercase;
 }
 #user{
     padding-left: 0px;
