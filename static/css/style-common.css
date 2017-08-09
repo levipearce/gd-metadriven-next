@@ -269,7 +269,7 @@ Styles for PanelDismissable Component
     width: 15px;
 }
 .dismissable .panel-heading {
-    height 32px; !important;
+    height: 32px; !important;
 }
 .dismissable .panel-heading h4 {
     font-family: "Open Sans";
