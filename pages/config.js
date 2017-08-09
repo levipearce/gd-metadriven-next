@@ -8,11 +8,11 @@ export const ATTR = {
 
 export const OPTS = {
   QUARTERS: [
-    {value:"Q4 2017", display: "Q4 2017"},
-    {value:"Q3 2017", display: "Q3 2017"},
-    {value:"Q2 2017", display: "Q2 2017"},
-    {value:"Q1 2017", display: "Q1 2017"},
-    {value:"Q4 2016", display: "Q4 2016"}
+    {value:"Q4/2017", display: "Q4 2017"},
+    {value:"Q3/2017", display: "Q3 2017"},
+    {value:"Q2/2017", display: "Q2 2017"},
+    {value:"Q1/2017", display: "Q1 2017"},
+    {value:"Q4/2016", display: "Q4 2016"}
   ],
 
   BRANDS: [
