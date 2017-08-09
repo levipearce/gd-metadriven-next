@@ -344,7 +344,7 @@ Styles for PanelDismissable Component
 }
 .collapse.in{
      margin: 0px;
-     padding: 5px;
+     padding: 5px 15px;
 }
 
 .gd-custom-heading{
