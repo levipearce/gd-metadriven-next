@@ -15,7 +15,7 @@ export default ({pathname}) => (
           <Image src="/static/images/avatars/67.jpg" id="avatar" circle />
         </Navbar.Text>
 
-        <Navbar.Text id="user">Alan Smith<br />Manager</Navbar.Text>
+          <Navbar.Text id="user">Alan Smith<br /><span id="user_title">Manager</span></Navbar.Text>
 
         <Navbar.Text>
         <Button href="/">

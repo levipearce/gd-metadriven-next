@@ -26,3 +26,9 @@ GoodData Demo Persona - Internal Style Customizations
 .button-see-more {
     background-color: #f14d76;
 }
+#user_title{
+    color: #7E859A;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 12px;
+}

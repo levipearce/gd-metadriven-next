@@ -18,7 +18,7 @@ export default class DashboardFilterHeader extends React.Component {
                     {this.props.title}
                 </Navbar.Text>
                 <Navbar.Text>{button}</Navbar.Text>
-                <Nav pullRight style={{width:400}}>
+                <Nav pullRight >
                   {this.props.children}
                 </Nav>
             </Navbar>
