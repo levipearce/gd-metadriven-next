@@ -1,8 +1,9 @@
 import React from 'react'
 import Head from 'next/head' // allows us to modify the HTML header element
 import Router from 'next/router'
-import {Button, Grid, Row, Col, Nav, NavItem, Glyphicon} from 'react-bootstrap'
+import { Grid, Row, Col} from 'react-bootstrap'
 import Header from "../components/Header"
+import HeaderGrid from "../components/HeaderGrid"
 import SideBar from "../components/SideBar"
 import HeaderExt from "../components/HeaderExt"
 import SideBarExt from "../components/SideBarExt"
@@ -22,7 +23,7 @@ export default class App extends React.Component {
         let sidebar=null;
         if(this.props.pathname.indexOf('internal')>-1){
             console.log('Using Internal Components')
-            header = (<Header pathname={this.props.pathname}/>);
+            header = (<HeaderGrid pathname={this.props.pathname}/>);
             sidebar = (<SideBar pathname={this.props.pathname}/>);
             //bootStrapCss= "/static/css/internal/bootstrap.css";
             //bootStrapThemeCss= "/static/css/internal/bootstrap-theme.css";

@@ -3,6 +3,19 @@ GoodData Demo Persona - External Style Customizations
 golden_light #70d09f
 */
 
+/*
+Customizing NavBar Inverse styles
+*/
+.navbar-inverse {
+    background-color: #313541;
+    background-image: none;
+    color: white;
+    margin-bottom: 0px;
+    padding-top:10px;
+    border-radius: 0;
+    border: 0px;
+    height: 60px;
+}
 div.sidebar-area {
     border-top-color: #fed331;
 }
