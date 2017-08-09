@@ -10,7 +10,7 @@ export default ({pathname}) => (
       <Navbar.Text id="company-name" className="gd-custom-heading">GoodRetail</Navbar.Text>
       <Navbar.Text id="product-category" className="gd-custom-heading">Women's Activewear</Navbar.Text>
 
-      <Nav pullRight style={{width: 290}}>
+      <Nav pullRight style={{width: 310}}>
         <Navbar.Text>
           <Image src="/static/images/avatars/67.jpg" id="avatar" circle />
         </Navbar.Text>

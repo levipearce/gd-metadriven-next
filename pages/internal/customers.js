@@ -19,7 +19,9 @@ export default (props) => (
         <FilterSelector label="Product Type" items={[]} onChange={null} class="filter-right-align"  controlLabelClass="" />
       </DashboardFilterHeader>
 
-      <ContentBox><iframe frameborder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9233&nochrome=true" width="100%" height="380px" allowTransparency="false"></iframe>
-    </ContentBox>
+      <ContentBox>
+        <iframe frameborder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10591&nochrome=true"
+                width="100%" height="950px" allowTransparency="false"></iframe>
+      </ContentBox>
   </App>
 )

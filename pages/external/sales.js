@@ -19,7 +19,7 @@ export default (props) => (
               </Breadcrumb>
           </Row>
           <Row><Col sm={12}>
-              <iframe frameBorder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10592" width="100%" height="670px" allowTransparency="false"></iframe>
+              <iframe frameBorder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10592&nochrome=true" width="100%" height="670px" allowTransparency="false"></iframe>
           </Col></Row>
       </Grid>
   </App>

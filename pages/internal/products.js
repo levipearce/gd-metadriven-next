@@ -16,7 +16,8 @@ export default (props) => (
       <DashboardFilterHeader title="Products" filter1={{title:'Filter1Title'}} filter2={{title:'Filter1Title'}} />
 
       <ContentBox>
-      <iframe frameBorder="0" src="https://whitelabeling.gooddata.com/#s=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw|projectDashboardPage|/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/9233|8bb5cbce4779" width="400px" height="300px" allowTransparency="false"></iframe>
+        <iframe frameborder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10550&nochrome=true"
+                width="100%" height="330px" allowTransparency="false"></iframe>
     </ContentBox>
   </App>
 )

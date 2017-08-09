@@ -30,7 +30,7 @@ export default (props) => (
       </Row>
       <Row>
         <Col sm={12}>
-          <iframe frameBorder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10058" width="100%" height="1170px" allowTransparency="false"></iframe>
+          <iframe frameBorder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10058&nochrome=true" width="100%" height="1170px" allowTransparency="false"></iframe>
         </Col>
       </Row>
     </Grid>

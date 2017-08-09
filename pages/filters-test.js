@@ -25,9 +25,11 @@ export default class FiltersTest extends React.Component {
 
   render() {
     return <App pathname={this.props.url.pathname} >
-      <FilterSelector label="Subcategory" items={this.props.subcatItems} onChange={this.handleFilterChange.bind(this)} />
-      <FilterSelector label="Product Type" items={this.props.productTypes} onChange={this.handleFilterChange.bind(this)} />
-      <AlertDismissable style="danger">
+      <DashboardFilterHeader>
+      <FilterSelector label="Subcategory" items={this.props.subcatItems} onChange={this.handleFilterChange.bind(this)} class="filter-right-align"/>
+      <FilterSelector label="Product Type" items={this.props.productTypes} onChange={this.handleFilterChange.bind(this)} class="filter-right-align"/>
+      </DashboardFilterHeader>
+      <AlertDismissable style="info">
         <h4>Generated Insight</h4>
         <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets.</p>
       </AlertDismissable>
