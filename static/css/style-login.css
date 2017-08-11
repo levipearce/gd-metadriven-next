@@ -1,0 +1,29 @@
+/*
+General Layout Styles
+*/
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0px 0px;
+    background-color: #313541;
+}
+
+.gd-login-header {
+    background-color: #484C5C;
+    border: 0px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: solid;
+    border-bottom-color: #29A9EC;
+    border-bottom-width: 6px;
+}
+
+.gd-login-panel {
+    margin: 60px auto;
+    width: 600px;
+}
