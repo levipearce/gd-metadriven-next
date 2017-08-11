@@ -54,7 +54,7 @@ export default class InternalIndex extends React.Component {
                         class="filter-right-align"/>
       </DashboardFilterHeader>
       <PanelDismissable header="Alert" link="/internal/sales" bsStyle="info">
-        <p>Sales Performance for Fashion Co. Leggings is down 33% from last year... <a
+        <p>Sales Performance for Fashion Co. Leggings is down 33% from last year. <a
           href="/internal/sales">See more details</a></p>
       </PanelDismissable>
       <ContentBox>

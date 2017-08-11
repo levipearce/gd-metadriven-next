@@ -16,12 +16,12 @@ export default class HeaderExt extends React.Component {
                     <Navbar.Text id="company-name">
                         Fashion Co.
                     </Navbar.Text>
-                    <Nav pullRight style={{width: 400}}>
+                    <Nav pullRight style={{width: 320}}>
                         <Navbar.Text>
                             <Image src="/static/images/avatars/31.jpg" id="avatar" circle/>
                         </Navbar.Text>
 
-                        <Navbar.Text id="user">Brian Moody<br/>Fashion Co Brand Manager</Navbar.Text>
+                        <Navbar.Text id="user">Brian Moody<br/>Brand Manager</Navbar.Text>
 
                         <Navbar.Text>
                             <Button bsStyle="default" href="/">

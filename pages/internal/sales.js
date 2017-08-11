@@ -27,14 +27,15 @@ export default class InternalSales extends React.Component {
       </Breadcrumb>
 
       <DashboardFilterHeader title="Sales">
-        <FilterSelector label="Select Period" items={OPTS.QUARTERS} value={OPTS.QUARTERS[1].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align"/>
-        <FilterSelector label="Brand" items={OPTS.BRANDS} value={OPTS.BRANDS[1].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
-        <FilterSelector label="Subcategory" items={OPTS.SUBCATS} value={OPTS.SUBCATS[1].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
-        <FilterSelector label="Product Type" items={OPTS.PRODTYPES} value={OPTS.PRODTYPES[0].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
+        <FilterSelector label="Product Type" items={OPTS.PRODTYPES} value={OPTS.PRODTYPES[0].value} class="filter-right-align" controlLabelClass="control-label-left-border" />
+        <FilterSelector label="Subcategory" items={OPTS.SUBCATS} value={OPTS.SUBCATS[1].value} class="filter-right-align" controlLabelClass="control-label-left-border" />
+        <FilterSelector label="Brand" items={OPTS.BRANDS} value={OPTS.BRANDS[1].value} class="filter-right-align" controlLabelClass="control-label-left-border" />
+        <FilterSelector label="Select Period" items={OPTS.QUARTERS} value={OPTS.QUARTERS[1].value}  class="filter-right-align" />
       </DashboardFilterHeader>
       
       <PanelDismissable header="Alert" bsStyle="info">
-        <p>Sales performance for <b>Low Rise Leggings</b> is well below overall category performance.</p>
+        <p>Sales performance for <b>Low Rise Leggings</b> is well below overall category performance.{' '}
+        <a href="/internal/customers">Review sales details.</a></p>
       </PanelDismissable>
       <ContentBox>
         <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="790px" allowTransparency="true"></iframe>

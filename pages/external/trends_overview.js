@@ -1,5 +1,4 @@
 import App from "../../components/App"
-import DashboardNavHeader from "../../components/DashboardNavHeader"
 
 import {Breadcrumb, Grid,Row, Col} from 'react-bootstrap'
 export default (props) => (

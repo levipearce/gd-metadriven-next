@@ -40,10 +40,13 @@ export const OPTS = {
 
   PRODTYPES: [
     {value:"Leggings", display:"Leggings"}
-  ]
-    ,
+  ],
 
-    PRODLINE: [
-        {value:"Low-rise Leggings", display:"Low-rise Leggings"}
-    ]
+  PRODLINE: [
+      {value:"Low-rise Leggings", display:"Low-rise Leggings"}
+  ],
+
+  SEASONS: [
+    {value:"FALL 2017", display:"FALL 2017"}
+  ]
 }
