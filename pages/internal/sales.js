@@ -28,13 +28,13 @@ export default class InternalSales extends React.Component {
 
       <DashboardFilterHeader title="Sales">
         <FilterSelector label="Select Period" items={OPTS.QUARTERS} value={OPTS.QUARTERS[1].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align"/>
-        <FilterSelector label="Brand" items={OPTS.BRANDS} value={OPTS.BRANDS[0].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
+        <FilterSelector label="Brand" items={OPTS.BRANDS} value={OPTS.BRANDS[1].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
         <FilterSelector label="Subcategory" items={OPTS.SUBCATS} value={OPTS.SUBCATS[1].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
         <FilterSelector label="Product Type" items={OPTS.PRODTYPES} value={OPTS.PRODTYPES[0].value} onChange={this.handleFilterChange.bind(this)} class="filter-right-align" />
       </DashboardFilterHeader>
       
       <PanelDismissable header="Alert" bsStyle="info">
-        <p>Sales Performance for <b>Activewear</b> is down 10% from last year and is not on track to meet revenue targets.</p>
+        <p>Sales performance for <b>Low Rise Leggings</b> is well below overall category performance.</p>
       </PanelDismissable>
       <ContentBox>
         <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="790px" allowTransparency="true"></iframe>

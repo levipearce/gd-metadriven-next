@@ -308,16 +308,16 @@ Styles for PanelDismissable Component
 }
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
     color: #7e859a;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
     margin-top: 12px;
     margin-bottom: 5px;
 }
 .panel>.panel-collapse>.panel-body>p>a {
     color: #29a9ec;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 12px;
     margin-bottom: 5px;
 }

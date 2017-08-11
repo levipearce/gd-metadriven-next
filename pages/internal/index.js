@@ -50,9 +50,11 @@ export default class InternalIndex extends React.Component {
       <DashboardFilterHeader title="Sales" path="/internal/sales" customClass="button-see-more">
         <FilterSelector label="Select Period" items={OPTS.QUARTERS} value={OPTS.QUARTERS[1].value} onChange={this.handleFilterChange.bind(this)}
                         class="filter-right-align"/>
+        <FilterSelector label="Category" items={OPTS.CATEGORIES} value={OPTS.CATEGORIES[0].value} onChange={this.handleFilterChange.bind(this)}
+                        class="filter-right-align"/>
       </DashboardFilterHeader>
       <PanelDismissable header="Alert" link="/internal/sales" bsStyle="info">
-        <p>Sales Performance for Activewear is down 10% from last year and is not on track to meet revenue targets. <a
+        <p>Sales Performance for Fashion Co. Leggings is down 33% from last year... <a
           href="/internal/sales">See more details</a></p>
       </PanelDismissable>
       <ContentBox>

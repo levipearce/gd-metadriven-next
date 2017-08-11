@@ -16,9 +16,12 @@ export const OPTS = {
   ],
 
   BRANDS: [
-    {value:"Nike", display: "Nike"}
+    {value:"Nike", display: "Nike"},
+    {value:"Fashion Co.", display: "Fashion Co."}
   ],
-
+  CATEGORIES: [
+      {value:"Activewear", display: "Activewear"}
+  ],
   SUBCATS: [
     {value:"1", display: "Jackets & Hoodies"},
     {value:"2", display: "Pants"},
@@ -38,4 +41,9 @@ export const OPTS = {
   PRODTYPES: [
     {value:"Leggings", display:"Leggings"}
   ]
+    ,
+
+    PRODLINE: [
+        {value:"Low-rise Leggings", display:"Low-rise Leggings"}
+    ]
 }
