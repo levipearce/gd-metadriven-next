@@ -28,7 +28,7 @@ export default (props) => (
 
       <ContentBox>
           <iframe frameBorder="0" src="https://whitelabeling.gooddata.com/dashboard.html#project=/gdc/projects/nrjs8u9m5y01o8b3584jrx8rosc0ynhw&dashboard=/gdc/md/nrjs8u9m5y01o8b3584jrx8rosc0ynhw/obj/10592&nochrome=true"
-                  width="100%" height="570px" allowTransparency="false"></iframe>
+                  width="100%" height="570px" scrolling="no" allowTransparency="false"></iframe>
       </ContentBox>
   </App>
 )

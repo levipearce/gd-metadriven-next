@@ -12,7 +12,7 @@ export default ({children}) => (
     </div>
     <style jsx>{`
               div {
-                    width: 942px;
+                    width: 940px;
                     margin-top: 10px;
                     margin-bottom: 10px;
                }

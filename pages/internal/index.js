@@ -60,14 +60,14 @@ export default class InternalIndex extends React.Component {
       <ContentBox>
         <iframe frameborder="0"
                 src={this.state.embed_src_1}
-                width="100%" height="340px" allowTransparency="true"></iframe>
+                width="100%" height="340px" scrolling="no" allowTransparency="true"></iframe>
       </ContentBox>
 
       <DashboardFilterHeader title="Product" path="/internal/products" customClass="button-see-more"/>
       <ContentBox>
         <iframe frameborder="0"
                 src={this.state.embed_src_2}
-                width="100%" height="360px" allowTransparency="true"></iframe>
+                width="100%" height="360px" scrolling="no" allowTransparency="true"></iframe>
       </ContentBox>
 
       <PanelDismissable header="Alert" link="/internal/customers" bsStyle="info">
@@ -78,7 +78,7 @@ export default class InternalIndex extends React.Component {
       <ContentBox>
         <iframe frameborder="0"
                 src={this.state.embed_src_3}
-                width="100%" height="300px" allowTransparency="true"></iframe>
+                width="100%" height="300px" scrolling="no" allowTransparency="true"></iframe>
       </ContentBox>
     </App>
   }

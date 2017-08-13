@@ -38,7 +38,7 @@ export default class InternalSales extends React.Component {
         <a href="/internal/customers">Review sales details.</a></p>
       </PanelDismissable>
       <ContentBox>
-        <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="790px" allowTransparency="true"></iframe>
+        <iframe frameBorder="0" src={this.state.dashboard_url} width="100%" height="790px" scrolling="no" allowTransparency="true"></iframe>
       </ContentBox>
     </App>
   }
