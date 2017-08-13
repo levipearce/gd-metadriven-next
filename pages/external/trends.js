@@ -1,7 +1,7 @@
 import App from "../../components/App"
 import ContentBox from "../../components/ContentBox"
 import DashboardFilterHeader from "../../components/DashboardFilterHeader"
-import {Breadcrumb, BreadcrumbItem, Grid, Row, Col} from 'react-bootstrap'
+import {Breadcrumb} from 'react-bootstrap'
 
 export default (props) => (
   <App pathname={props.url.pathname}>
