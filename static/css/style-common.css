@@ -236,7 +236,7 @@ Styles for PanelDismissable Component
 */
 .dismissable{
     margin-bottom: 10px;
-    width: 942px; /* TODO: Remove when fixed width no longer needed */
+    width: 100%; /* TODO: Remove when fixed width no longer needed */
 }
 
 .alertPanel {
@@ -334,8 +334,8 @@ Styles for PanelDismissable Component
     top: 10px;
     /* float: right;
     right: 15px; */
-    float: left; /* TODO: remove when fixed size not needed */
-    left: 890px; /* TODO: remove when fixed size not needed */
+    float: right; /* TODO: remove when fixed size not needed */
+    right: 15px; /* TODO: remove when fixed size not needed */
     background: transparent url("/static/images/alert_close_white.png");
     opacity: 1;
     border: none;
@@ -445,4 +445,16 @@ Header components reference by ID
 #avatar{
     border: 2px solid white;
     height: 42px;
+}
+
+.modalMap{
+    position: relative;
+    left:50%;
+    margin-left: -145px;
+}
+.modalText{
+    text-align: justify;
+}
+.modalHeadline{
+    text-align: center;
 }
