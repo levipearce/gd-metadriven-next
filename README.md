@@ -24,3 +24,4 @@ and then navigate to `http://localhost:3000`.
 
 Component CSS support provided by
 [styled-jsx](https://github.com/zeit/styled-jsx).
+# gd-metadriven-next
