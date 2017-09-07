@@ -1,15 +1,13 @@
 import React from 'react'
 import Head from 'next/head' // allows us to modify the HTML header element
-import Router from 'next/router'
 import { Grid, Row, Col} from 'react-bootstrap'
-import Header from "../components/Header"
 import HeaderGridFS from "../components/HeaderGridFS"
 import SideBar from "../components/SideBarMeta"
-import HeaderExt from "../components/HeaderExt"
-import SideBarExt from "../components/SideBarExt"
 import {LAYOUTS} from "../pages/meta"
-
-export default class AppFS extends React.Component {
+/**
+ *
+ * */
+export default class AppMetaDriven extends React.Component {
     getLayoutMetaObject(path){
         return LAYOUTS.filter(
             function(LAYOUTS){

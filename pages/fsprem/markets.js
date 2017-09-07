@@ -15,7 +15,7 @@ export default class InternalCustomer extends React.Component{
           </Breadcrumb.Item>
       </Breadcrumb>
         <ContentBox>
-            <iframe frameborder="0" src="https://secure.gooddata.com/reportWidget.html#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&report=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/5091&title=yes&transparentBackground=yes" width="50%" height="200px" allowTransparency="true"></iframe>
+            <iframe frameborder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=9c684f07256e&nochrome=true" width="100%" height="580px" allowTransparency="false"></iframe>
         </ContentBox>
   </AppFS>);
     }

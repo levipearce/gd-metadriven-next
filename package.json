@@ -1,7 +1,7 @@
 {
-  "name": "gd-etail-next",
+  "name": "gd-metadriven-next",
   "version": "1.0.0",
-  "description": "GoodData eTail Demo",
+  "description": "GoodData MetaDriven Demo",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,6 @@
   },
   "keywords": [
     "gooddata",
-    "retail",
     "demo"
   ],
   "author": "",
