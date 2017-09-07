@@ -17,16 +17,34 @@ export default class LCMIndex extends React.Component {
                       <Row>
 
                           <Col className="lcm-header" sm={2}></Col>
-                          <Col className="lcm-header" sm={2}>Development <Button className="button-options pull-right">...</Button></Col>
-                          <Col className="lcm-header" sm={2}>QA <Button className="button-options pull-right">...</Button></Col>
-                          <Col className="lcm-header" sm={2}>Production US  <DropdownButton noCaret className="button-options pull-right"  title="..." onSelect={this.onSelect}>
+                          <Col className="lcm-header" sm={2}>Development <DropdownButton pullRight noCaret className="button-options"  title="..." onSelect={this.onSelect}>
+                              <MenuItem eventKey="1">Add Customer</MenuItem>
+                              <MenuItem eventKey="2"><ProvisionCustomerModal message="Provision Customer" domain="Development"/></MenuItem>
+                              <MenuItem divider />
+                              <MenuItem eventKey="3">Release from QA</MenuItem>
+                              <MenuItem eventKey="4">Revert to Last Release</MenuItem>
+                          </DropdownButton></Col>
+                          <Col className="lcm-header" sm={2}>QA <DropdownButton pullRight noCaret className="button-options"  title="..." onSelect={this.onSelect}>
+                              <MenuItem eventKey="1">Add Customer</MenuItem>
+                              <MenuItem eventKey="2"><ProvisionCustomerModal message="Provision Customer" domain="QA"/></MenuItem>
+                              <MenuItem divider />
+                              <MenuItem eventKey="3">Release from QA</MenuItem>
+                              <MenuItem eventKey="4">Revert to Last Release</MenuItem>
+                          </DropdownButton></Col>
+                          <Col className="lcm-header" sm={2}>Production US  <DropdownButton pullRight noCaret className="button-options"  title="..." onSelect={this.onSelect}>
                               <MenuItem eventKey="1">Add Customer</MenuItem>
                               <MenuItem eventKey="2"><ProvisionCustomerModal message="Provision Customer" domain="Production US"/></MenuItem>
                               <MenuItem divider />
                               <MenuItem eventKey="3">Release from QA</MenuItem>
                               <MenuItem eventKey="4">Revert to Last Release</MenuItem>
                           </DropdownButton></Col>
-                          <Col className="lcm-header" sm={2}>Production EU <Button className="button-options pull-right">...</Button></Col>
+                          <Col className="lcm-header" sm={2}>Production EU <DropdownButton pullRight noCaret className="button-options"  title="..." onSelect={this.onSelect}>
+                              <MenuItem eventKey="1">Add Customer</MenuItem>
+                              <MenuItem eventKey="2"><ProvisionCustomerModal message="Provision Customer" domain="Production EU"/></MenuItem>
+                              <MenuItem divider />
+                              <MenuItem eventKey="3">Release from QA</MenuItem>
+                              <MenuItem eventKey="4">Revert to Last Release</MenuItem>
+                          </DropdownButton></Col>
                       </Row>
         <Row>
             <Col className="lcm-segment" sm={2}><Button className="button-see-more">Basic</Button></Col>

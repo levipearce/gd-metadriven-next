@@ -21,6 +21,9 @@ export default class AppMetaDriven extends React.Component {
         let style= null;
         let header =null;
         let sidebar=null;
+        let sidebarspan= LAYOUT.SIDEBAR ==null? 2 : LAYOUT.SIDEBAR;
+        let totalspan = LAYOUT.TOTALSPAN_SM ==null ? 12 : LAYOUT.TOTALSPAN_SM;
+        let contentspan = totalspan-sidebarspan;
             header = (<HeaderGridFS pathname={this.props.pathname} username={LAYOUT.USERNAME} avatar={LAYOUT.AVATAR} title={LAYOUT.TITLE} product={LAYOUT.PRODUCT}/>);
             sidebar = (<SideBar pathname={this.props.pathname} navmenu={LAYOUT.NAVMENU}/>);
             //bootStrapCss= "/static/css/internal/bootstrap.css";
@@ -38,15 +41,15 @@ export default class AppMetaDriven extends React.Component {
             </Head>
             <Grid fluid>
                 <Row>
-                    <Col sm={12}>
+                    <Col sm={totalspan}>
                         {header}
                     </Col>
                 </Row>
                 <Row>
-                    <Col className="sidebar-area" sm={2}>
+                    <Col className="sidebar-area" sm={sidebarspan}>
                         {sidebar}
                     </Col>
-                    <Col className="content-area" sm={10}>
+                    <Col className="content-area" sm={contentspan}>
                         {this.props.children}
                     </Col>
                 </Row>

@@ -57,7 +57,7 @@ export default class InternalIndex extends React.Component {
 
       <DashboardFilterHeader title="Customer Rankings by Risk Type">
       </DashboardFilterHeader>
-      <PanelDismissable header="Alert" link="" bsStyle="info"><p>Your loyalty ranking among retiring customers is below the industry benchmark please contact your customer support represent for assistance addressing this issue.</p></PanelDismissable>
+      <PanelDismissable header="Alert" link="" bsStyle="info"><p>Your loyalty ranking among retirement customers falls below the average rank for other segments please contact your customer support representative for assistance addressing this issue.</p></PanelDismissable>
       <ContentBox>
         <iframe frameborder="0" src="https://secure.gooddata.com/reportWidget.html#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&report=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4968&title=yes" width="50%" height="380px" allowTransparency="true"></iframe>
         <iframe frameborder="0" src="https://secure.gooddata.com/reportWidget.html#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&report=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/5334&title=yes" width="50%" height="380px" allowTransparency="true"></iframe>

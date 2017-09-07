@@ -33,6 +33,6 @@ export const LAYOUTS = [
       ]},
     {NAME: 'LCM', NAVPATH: "/lcm", STYLEPATH:"lcm", PRODUCT:'Lifecycle Management System', USERNAME:'Sam Smith', AVATAR:'67',TITLE:'Deployment Manager',
         NAVMENU:[
-        ]}
+        ], SIDEBAR:1, TOTALSPAN_SM:12}
 ];
 

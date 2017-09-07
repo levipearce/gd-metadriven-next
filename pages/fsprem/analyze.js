@@ -9,7 +9,7 @@ export default (props) => (
       </Breadcrumb.Item>
     </Breadcrumb>
       <iframe frameborder="0"
-              src="https://secure.gooddata.com/analyze/embedded/#/u72gr8lshicm52o96ntcju2m0n542vdh/reportId/edit"
+              src="https://secure.gooddata.com/analyze/embedded/#/u72gr8lshicm52o96ntcju2m0n542vdh/reportId/edit?dataset=dataset.csv_demodata_c"
               width="100%" height="800px" scrolling="no" allowTransparency="false"></iframe>
   </App>
 )

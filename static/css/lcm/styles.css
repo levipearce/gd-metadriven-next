@@ -1,0 +1,97 @@
+/*
+GoodData Demo Persona - LCM Admin
+*/
+body {
+    background-color: #313541;
+}
+.nav-stacked li a {
+    color: #313541;
+}
+
+.nav-stacked li a:hover, .nav-stacked li.active a:hover {
+    color: #007BB5;
+}
+
+.nav-stacked li.active a {
+    color: #29A9EC;
+
+}
+div.sidebar-area {
+    padding: 0;
+    background-color: white;
+    border-top-color: #008000;
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+div.content-area {
+    padding: 0;
+    border-top-color: #008000;
+    border-top-style: solid;
+    border-top-width: 3px;
+}
+.btn-default, .btn-default:hover{
+    background-color: #008000;
+    /*background-image: linear-gradient(to bottom,#fff 0,#f14d76 20%);*/
+    background-image: none;
+    text-shadow: 0 0 0 #fff;
+    box-shadow: inset 0 0px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+    border: 0px;
+    color: white;
+}
+.button-see-more {
+    background-color: #008000;
+}
+.button-options {
+    background-color: rgba(248, 248, 248,0.25);
+    padding: 0px 5px 0px 5px;
+
+}
+#user_title{
+    color: #7E859A;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 12px;
+}
+.content-area{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 12px;
+}
+.lcm-header{
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    margin: 5px;
+}
+.lcm-segment{
+    margin-top:45px;
+}
+.lcm-domain-segment{
+    background-color: rgba(248, 248, 248,0.05);
+    height: 120px;
+    margin: 5px;
+    padding-top: 10px;
+    border-radius: 5px;
+    opacity: 50;
+}
+.dropdown-toggle.btn-default {
+    background-color: rgba(248, 248, 248,0.05);
+    color: #ffffff;
+    box-shadow: inset 0 0px 0 rgba(248, 248, 248,0.05), 0 0px 0px rgba(248, 248, 248,0.05);
+    border-color: transparent;
+    height: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.btn-group{
+    float: right;
+}
+.dropdown-menu{
+    background-color: rgba(248, 248, 248,1);
+    color: #ffffff;
+}
+.dropdown-menu>li>a{
+    color: #000000;
+}
