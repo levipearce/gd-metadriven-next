@@ -16,7 +16,7 @@ export default class InternalSales extends React.Component {
         </Breadcrumb.Item>
       </Breadcrumb>
       <ContentBox>
-        <iframe frameBorder="0" src="https://secure.gooddata.com/reportWidget.html#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&report=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/5091&title=yes&transparentBackground=no" width="100%" height="500px" allowTransparency="false"></iframe>
+        <iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=b63a40870722&nochrome=true" width="100%" height="480px" allowTransparency="false"></iframe>
       </ContentBox>
     </App>
   }
