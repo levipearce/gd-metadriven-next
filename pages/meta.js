@@ -33,6 +33,9 @@ export const LAYOUTS = [
       ]},
     {NAME: 'LCM', NAVPATH: "/lcm", STYLEPATH:"lcm", PRODUCT:'Lifecycle Management System', USERNAME:'Sam Smith', AVATAR:'67',TITLE:'Deployment Manager',
         NAVMENU:[
+        ], SIDEBAR:1, TOTALSPAN_SM:12},
+    {NAME: 'SDK', NAVPATH: "/sdk", STYLEPATH:"sdk", PRODUCT:'JavaScript UI SDK', USERNAME:'Good Developer', AVATAR:'67',TITLE:'JavaScript Overlord',
+        NAVMENU:[
         ], SIDEBAR:1, TOTALSPAN_SM:12}
 ];
 

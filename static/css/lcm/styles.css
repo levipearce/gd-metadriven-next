@@ -67,6 +67,7 @@ div.content-area {
 }
 .lcm-segment{
     margin-top:45px;
+    padding-left:40px;
 }
 .lcm-domain-segment{
     background-color: rgba(248, 248, 248,0.05);

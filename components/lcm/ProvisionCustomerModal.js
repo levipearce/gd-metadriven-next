@@ -26,7 +26,8 @@ function DataEntryModal(props)
     <FormGroup controlId="formControlsSelect">
       <ControlLabel>Customer</ControlLabel>
       <FormControl componentClass="select" placeholder="select">
-        <option value="select">GlobalEx Corporation</option>
+        <option value="select">Select Customer</option>
+          <option value="select">Globex Corporation</option>
         <option value="other">ACME Corporation</option>
       </FormControl>
     </FormGroup>
@@ -81,10 +82,14 @@ export default class ProvisionCustomerModal extends React.Component {
     provision() {
         console.log('Provision',this);
         const cookies = new Cookies();
+
+        var client_count = cookies.get('prod_us_premium_client_count')==null?'231':cookies.get('prod_us_premium_client_count');
         var count = cookies.get('prod_us_premium_count')==null?'1507':cookies.get('prod_us_premium_count');
         var prod_count =  Number.parseInt(count);
+        var prod_client_count = Number.parseInt(client_count);
         console.log('Prod Count Before',cookies.get('prod_us_premium_count'));
-        cookies.set('prod_us_premium_count', ''+(prod_count+1), { path: '/' });
+        cookies.set('prod_us_premium_client_count', ''+(prod_client_count+1), { path: '/' });
+        cookies.set('prod_us_premium_count', ''+(prod_count+2), { path: '/' });
         console.log('Prod Count After',cookies.get('prod_us_premium_count'));
         this.close();
         window.location.reload();

@@ -59,7 +59,7 @@ export default class InternalIndex extends React.Component {
       </DashboardFilterHeader>
       <PanelDismissable header="Alert" link="" bsStyle="info"><p>Your loyalty ranking among retirement customers falls below the average rank for other segments please contact your customer support representative for assistance addressing this issue.</p></PanelDismissable>
       <ContentBox>
-        <iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=abb3fe825d58&nochrome=true" width="100%" height="480px" allowTransparency="false"></iframe>
+        <iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=abb3fe825d58&nochrome=true" width="100%" height="680px" allowTransparency="false"></iframe>
       </ContentBox>
     </AppFS>
   }

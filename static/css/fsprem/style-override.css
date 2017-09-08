@@ -1,0 +1,10 @@
+/**
+This file is used to override specifics from style sheets used by common layouts.
+ */
+.panel-info>.panel-heading {
+    color: white;
+    background-color: #008000;
+    border-color: #008000;
+    background-image:none;
+    border-radius: 0px;
+}
