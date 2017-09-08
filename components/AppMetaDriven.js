@@ -29,7 +29,7 @@ export default class AppMetaDriven extends React.Component {
             //bootStrapCss= "/static/css/internal/bootstrap.css";
             //bootStrapThemeCss= "/static/css/internal/bootstrap-theme.css";
             style=`/static/css/${LAYOUT.STYLEPATH}/styles.css`;
-
+        let style_override=`/static/css${LAYOUT.NAVPATH}/style-override.css`;
       return (  <main>
             <Head>
                 <title>GoodData Financial Services Demo</title>
@@ -38,6 +38,7 @@ export default class AppMetaDriven extends React.Component {
                       href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css"/>
                 <link rel="stylesheet" href="/static/css/style-common.css"/>
                 <link rel="stylesheet" href={style}/>
+                <link rel="stylesheet" href={style_override}/>
             </Head>
             <Grid fluid>
                 <Row>

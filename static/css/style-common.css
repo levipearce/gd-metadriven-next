@@ -442,6 +442,12 @@ Header components reference by ID
     color: white;
     font-family: "Open Sans",sans-serif;
 }
+#user_title{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 12px;
+}
 #avatar{
     border: 2px solid white;
     height: 42px;

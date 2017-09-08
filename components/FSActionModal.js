@@ -3,7 +3,6 @@ import Cookies from "universal-cookie";
 
 function ActionModal(props)
 {
-    console.log('ActinModal this object:',props.obj);
     if (props.action=='SFDC_MODAL_AZ') {
         return  <span>
                     <span className="actionmodel_init" onClick={props.obj.open} >{props.message}</span>
@@ -15,7 +14,7 @@ function ActionModal(props)
                         <Modal.Body>
                             <img height="170" src="/static/images/map_az.png" className="modalMap" />
 
-                            <p className="modalHeadline">Retiring Metrics: <b>GlobalEx Corporation, Southwest, 4.52</b></p>
+                            <p className="modalHeadline">Retiring Metrics: <b>Globex Corporation, Southwest, 4.52</b></p>
 
                             <p className="modalText">
                                 Arizona appears to be the outlying state in your region, with a quarterly drop from 4.59 to 4.47 while showing growth from 4.51
@@ -79,13 +78,9 @@ export default class FSActionModal extends React.Component {
         handleClick(e) {
                 const cookies = new Cookies();
                 cookies.set('sfdc_action_taken', 'true', { path: '/' });
-                console.log(cookies.get('sfdc_action_taken'));
-                console.log('The link was clicked.');
 
         }
         render() {
-        console.log('FSActionModel render',this.state.showModal);
-
             return (
                 <ActionModal obj={this} action={this.props.action} message={this.props.message}/>
             );

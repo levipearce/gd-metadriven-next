@@ -1,0 +1,9 @@
+/**
+This file is used to override specifics from style sheets used by common layouts.
+ */
+#user_title{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-weight: 200;
+    font-size: 12px;
+}

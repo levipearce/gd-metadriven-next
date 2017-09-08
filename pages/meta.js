@@ -20,7 +20,7 @@ export const LAYOUTS = [
       {NAME: 'FS_BASIC', NAVPATH: "/fsbasic", STYLEPATH:"internal", PRODUCT:'Asset Management System', USERNAME:'Brian Moody', AVATAR:'67',TITLE:'Regional Manager',
           NAVMENU:[
               {text:'Alerts',navpath:'/fsbasic',glyph:'warning-sign'},
-              {text:'Market Analysis',navpath:'/fsbasic/markets',glyph:'user'},
+              {text:'Peer Analysis',navpath:'/fsbasic/markets',glyph:'user'},
               {text:'Trends',navpath:'/fsbasic/trends',glyph:'th-large'}
           ]},
       {NAME: 'FS_PREM', NAVPATH: "/fsprem", STYLEPATH:"external", PRODUCT:'Asset Management System', USERNAME:'Alan Smith', AVATAR:'21',  TITLE:'Regional Manager',
