@@ -45,8 +45,7 @@ function ActionModal(props)
                             <Modal.Title>Insight Driving Action</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>
-                            <iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=903fb384def2&nochrome=true" width="100%" height="280px" allowTransparency="false"></iframe>
-                            <iframe frameBorder="0" src="https://secure.gooddata.com/reportWidget.html#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&report=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/5353&title=no" width="100%" height="280px" allowTransparency="true"></iframe>
+                            <iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=903fb384def2&nochrome=true" width="100%" height="480px" allowTransparency="false"></iframe>
                         </Modal.Body>
                         <Modal.Footer>
                             <Button onClick={props.obj.close}>Close</Button>
