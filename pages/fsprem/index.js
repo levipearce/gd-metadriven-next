@@ -81,12 +81,7 @@ export default class InternalIndex extends React.Component {
             <p><u><FSActionModal action="CUSTOMER_RANKING" message="Click here"/></u> to review the ratio benchmark per state and risk type.</p>
         </ContentBox>
       <ContentBox>
-        <iframe frameBorder="0"
-                src={this.state.embed_src_1}
-                width="50%" height="340px" scrolling="no" allowTransparency="true"></iframe>
-        <iframe frameBorder="0"
-                src={this.state.embed_src_2}
-                width="50%" height="340px" scrolling="no" allowTransparency="true"></iframe>
+          <iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=988a12af1ec1&nochrome=true" width="100%" height="680px" allowTransparency="false"></iframe>
       </ContentBox>
     </AppFS>
   }
