@@ -50,25 +50,74 @@ export default class LCMIndex extends React.Component {
                           </DropdownButton></Col>
                       </Row>
         <Row>
-            <Col className="lcm-segment" sm={2}><Button className="button-see-more"><SegmentDescriptionModal message="Basic"/></Button></Col>
-            <Col className="lcm-domain-segment" sm={2}><p>7 Clients<br/> </p></Col>
-            <Col className="lcm-domain-segment" sm={2}></Col>
-            <Col className="lcm-domain-segment" sm={2}></Col>
-            <Col className="lcm-domain-segment" sm={2}></Col>
-        </Row>
-        <Row>
-            <Col className="lcm-segment" sm={2}><Button className="button-see-more"><SegmentDescriptionModal message="Premium"/></Button></Col>
-            <Col className="lcm-domain-segment" sm={2}><p>7 Clients<br/> Last Changed 2m ago</p></Col>
-            <Col className="lcm-domain-segment" sm={2}></Col>
+            <Col className="lcm-segment" sm={2}><Button className="button-see-more"><SegmentDescriptionModal message="Basic" segment="BASIC"/></Button></Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    1 Clients<br/>
+                    6 Users<br/>
+                    0 reports in 24 hours<br/>
+                    0 filters in 24 hours<br/>
+                </p>
+            </Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    4 Clients<br/>
+                    200 Users<br/>
+                    111 reports in 24 hours<br/>
+                    72 filters in 24 hours<br/>
+                </p>
+            </Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    82 Clients<br/>
+                    768 Users<br/>
+                    4000 reports in 24 hours<br/>
+                    0 filters in 24 hours<br/>
+                </p>
+            </Col>
             <Col className="lcm-domain-segment" sm={2}>
                 <p>
                     {client_count} Clients<br/>
                     {count} Users<br/>
-                    8723 reports access in 24 hours<br/>
-                    11243 filter changes in 24 hours<br/>
+                    8723 reports in 24 hours<br/>
+                    11243 filters in 24 hours<br/>
                 </p>
             </Col>
-            <Col className="lcm-domain-segment" sm={2}><p>706 Clients<br/> Last Changed 2m ago</p></Col>
+        </Row>
+        <Row>
+            <Col className="lcm-segment" sm={2}><Button className="button-see-more"><SegmentDescriptionModal message="Premium"  segment="PREMIUM"/></Button></Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    {client_count} Clients<br/>
+                    {count} Users<br/>
+                    8723 reports in 24 hours<br/>
+                    11243 filters in 24 hours<br/>
+                </p>
+            </Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    {client_count} Clients<br/>
+                    {count} Users<br/>
+                    8723 reports in 24 hours<br/>
+                    11243 filters in 24 hours<br/>
+                </p>
+            </Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    {client_count} Clients<br/>
+                    {count} Users<br/>
+                    8723 reports in 24 hours<br/>
+                    11243 filters in 24 hours<br/>
+                </p>
+            </Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    {client_count} Clients<br/>
+                    {count} Users<br/>
+                    8723 reports in 24 hours<br/>
+                    11243 filters in 24 hours<br/>
+                </p>
+            </Col>
         </Row>
 
                 <ContentBox><iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=b6658b7a1cbd&nochrome=true" width="87%" height="380px" allowTransparency="false"></iframe></ContentBox>

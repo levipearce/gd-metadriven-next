@@ -8,3 +8,31 @@ This file is used to override specifics from style sheets used by common layouts
     background-image:none;
     border-radius: 0px;
 }
+.panel-info{
+    border-color:#008000;
+}
+.alertPanel-info {
+    background: transparent url("/static/images/alert_info_white.png") no-repeat;
+    opacity: 1;
+    border: none;
+    height: 14px;
+    width: 15px;
+}
+.closePanel-info {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 0px 0 #fff;
+    position: relative;
+    top: 10px;
+    /* float: right;
+    right: 15px; */
+    float: right; /* TODO: remove when fixed size not needed */
+    right: 15px; /* TODO: remove when fixed size not needed */
+    background: transparent url("/static/images/alert_close_white.png");
+    opacity: 1;
+    border: none;
+    height: 16px;
+    width: 17px;
+}

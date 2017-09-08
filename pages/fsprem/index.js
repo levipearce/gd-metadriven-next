@@ -34,7 +34,10 @@ function generateTabs(filter) {
 function ActionMessage(props)
 {
     if (props.actionTaken) {
-        return  <PanelDismissable header="Info" link="" bsStyle="info"><p>A SalesForce campaign was initiated to address this alert this downward trend in loyalty amount retiring customers within Arizona on.</p></PanelDismissable>
+        const cookies = new Cookies();
+        var tstamp = cookies.get('sfdc_action_taken_tstamp');
+        console.log('TStamp:',tstamp);
+        return  <PanelDismissable header="Info" link="" bsStyle="info"><p>A SalesForce campaign was initiated to address the downward trend in loyalty among retiring customers within Arizona on {tstamp}.</p></PanelDismissable>
     } else {
         return <PanelDismissable header="Alert" link="" bsStyle="default"><p>Your loyalty ranking among retiring customers is below the industry benchmark <u><FSActionModal action="SFDC_MODAL_AZ" message="Click here"/></u> to address this issue.</p></PanelDismissable>;
     }
@@ -60,6 +63,7 @@ export default class InternalIndex extends React.Component {
       const cookies = new Cookies();
       //cookies.set('sfdc_action_taken', 'false', { path: '/' });
       console.log('getCookie',cookies.get('sfdc_action_taken'));
+      console.log('getCookie',cookies.get('sfdc_action_taken_tstamp'));
       return cookies.get('sfdc_action_taken')=='true'?true:false;
   }
   render() {

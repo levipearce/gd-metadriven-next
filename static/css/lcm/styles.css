@@ -29,7 +29,7 @@ div.content-area {
     border-top-style: solid;
     border-top-width: 3px;
 }
-.btn-default, .btn-default:hover{
+.btn-default, .btn-default:hover, .btn-default:focus{
     background-color: #008000;
     /*background-image: linear-gradient(to bottom,#fff 0,#f14d76 20%);*/
     background-image: none;

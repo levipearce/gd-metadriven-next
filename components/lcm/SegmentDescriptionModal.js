@@ -11,7 +11,9 @@ function DescriptionModal(props)
                         <Modal.Header closeButton>
                             <Modal.Title>Basic Product Description</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body>Body
+                        <Modal.Body>Includes basic visualizations distributed <br/>
+                            Limited integration of 3rd Party data. <br/>
+                            Does not include actionable insights. <br/>
                         </Modal.Body>
                         <Modal.Footer>
                             <Button onClick={props.obj.close}>Cancel</Button>
@@ -27,7 +29,12 @@ function DescriptionModal(props)
                         <Modal.Header closeButton>
                             <Modal.Title>Premium Product Features</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body>Body
+                        <Modal.Body>System of Insight Visualizations<br/>
+                            Comparision of Market Benchmarks <br/>
+                            3rd party data integrations <br/>
+                            Integrated Sales Force Campaign Integration<br/>
+                            Insights decisions integrated into data model for future automation<br/>
+                            Access to machine learner modules for enhanced decision automation.
                         </Modal.Body>
                         <Modal.Footer>
                             <Button onClick={props.obj.close}>Cancel</Button>
@@ -65,7 +72,7 @@ export default class SegmentDescriptionModal extends React.Component {
         console.log('SegmentDescriptionModal render',this.state.showModal);
 
         return (
-            <DescriptionModal obj={this} action={this.props.action} domain={this.props.domain} message={this.props.message}/>
+            <DescriptionModal obj={this} segment={this.props.segment} message={this.props.message}/>
         );
     }
 }

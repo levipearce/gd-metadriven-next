@@ -77,7 +77,21 @@ export default class FSActionModal extends React.Component {
         handleClick(e) {
                 const cookies = new Cookies();
                 cookies.set('sfdc_action_taken', 'true', { path: '/' });
+            var today = new Date();
+            var dd = today.getDate();
+            var mm = today.getMonth()+1; //January is 0!
 
+            var yyyy = today.getFullYear();
+            if(dd<10){
+                dd='0'+dd;
+            }
+            if(mm<10){
+                mm='0'+mm;
+            }
+             today = dd+'/'+mm+'/'+yyyy;
+                console.log('Tstamp set: ',today);
+                cookies.set('sfdc_action_taken_tstamp', today.toString(), { path: '/' });
+            console.log(cookies.get('sfdc_action_taken_tstamp'));
         }
         render() {
             return (
