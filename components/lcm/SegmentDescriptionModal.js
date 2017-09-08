@@ -8,15 +8,15 @@ function DescriptionModal(props)
                     <span className="actionmodel_init" onClick={props.obj.open} >{props.message}</span>
 
                     <Modal show={props.obj.state.showModal} onHide={props.obj.close}>
-                        <Modal.Header closeButton>
+                        <Modal.Header className="lcm-alert-header">
                             <Modal.Title>Basic Product Description</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body>Includes basic visualizations distributed <br/>
-                            Limited integration of 3rd Party data. <br/>
-                            Does not include actionable insights. <br/>
+                        <Modal.Body>Basic visualizations<br/>
+                            Automated Alerts<br/>
+                            Drill Through Reports<br/>
+                            KPIs
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button onClick={props.obj.close}>Cancel</Button>
                             <Button onClick={props.obj.close}>Close</Button>
                         </Modal.Footer>
                     </Modal>
@@ -26,18 +26,17 @@ function DescriptionModal(props)
                     <span className="actionmodel_init" onClick={props.obj.open} >{props.message}</span>
 
                     <Modal show={props.obj.state.showModal} onHide={props.obj.close}>
-                        <Modal.Header closeButton>
+                        <Modal.Header  className="lcm-alert-header">
                             <Modal.Title>Premium Product Features</Modal.Title>
                         </Modal.Header>
-                        <Modal.Body>System of Insight Visualizations<br/>
-                            Comparision of Market Benchmarks <br/>
+                        <Modal.Body>System of Insight<br/>
+                            Market Benchmarks <br/>
                             3rd party data integrations <br/>
-                            Integrated Sales Force Campaign Integration<br/>
-                            Insights decisions integrated into data model for future automation<br/>
-                            Access to machine learner modules for enhanced decision automation.
+                            Integrated SalesForce Campaign Integration<br/>
+                            Decision Engines<br/>
+                            Data Exploration
                         </Modal.Body>
                         <Modal.Footer>
-                            <Button onClick={props.obj.close}>Cancel</Button>
                             <Button onClick={props.obj.close}>Close</Button>
                         </Modal.Footer>
                     </Modal>

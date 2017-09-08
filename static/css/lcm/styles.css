@@ -65,6 +65,10 @@ div.content-area {
     padding-bottom: 20px;
     margin: 5px;
 }
+.modal-header{
+    background-color: #008000;
+    color: #FFFFFF
+}
 .lcm-segment{
     margin-top:45px;
     padding-left:40px;

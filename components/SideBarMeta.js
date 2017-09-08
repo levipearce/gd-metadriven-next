@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import {Col, Nav, NavItem, Glyphicon} from 'react-bootstrap'
+import {Col, Navbar,Nav, NavItem, Glyphicon} from 'react-bootstrap'
 
 
 export default class SideBarMeta extends React.Component{
@@ -15,6 +15,6 @@ export default class SideBarMeta extends React.Component{
                 ))}
             </Nav>
         );
-        return (<div><NavItems navarray={this.props.navmenu}/></div>);
+        return (<div><Navbar.Collapse><NavItems navarray={this.props.navmenu}/></Navbar.Collapse></div>);
     }
 }

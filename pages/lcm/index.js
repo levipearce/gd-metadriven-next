@@ -71,16 +71,16 @@ export default class LCMIndex extends React.Component {
                 <p>
                     82 Clients<br/>
                     768 Users<br/>
-                    4000 reports in 24 hours<br/>
-                    0 filters in 24 hours<br/>
+                    6010 reports in 24 hours<br/>
+                    2001 filters in 24 hours<br/>
                 </p>
             </Col>
             <Col className="lcm-domain-segment" sm={2}>
                 <p>
-                    {client_count} Clients<br/>
-                    {count} Users<br/>
-                    8723 reports in 24 hours<br/>
-                    11243 filters in 24 hours<br/>
+                    46 Clients<br/>
+                    1987 Users<br/>
+                    4440 reports today.<br/>
+                    1478 filters today.<br/>
                 </p>
             </Col>
         </Row>
@@ -88,39 +88,43 @@ export default class LCMIndex extends React.Component {
             <Col className="lcm-segment" sm={2}><Button className="button-see-more"><SegmentDescriptionModal message="Premium"  segment="PREMIUM"/></Button></Col>
             <Col className="lcm-domain-segment" sm={2}>
                 <p>
-                    {client_count} Clients<br/>
-                    {count} Users<br/>
-                    8723 reports in 24 hours<br/>
-                    11243 filters in 24 hours<br/>
+                    1 Clients<br/>
+                    6 Users<br/>
+                    0 reports today.<br/>
+                    0 filters today.<br/>
+                </p>
+            </Col>
+            <Col className="lcm-domain-segment" sm={2}>
+                <p>
+                    18 Clients<br/>
+                    198 Users<br/>
+                    2890 reports today.<br/>
+                    1904 filters today.<br/>
                 </p>
             </Col>
             <Col className="lcm-domain-segment" sm={2}>
                 <p>
                     {client_count} Clients<br/>
                     {count} Users<br/>
-                    8723 reports in 24 hours<br/>
-                    11243 filters in 24 hours<br/>
+                   12056 reports today.<br/>
+                    16234 filters today.<br/>
                 </p>
             </Col>
             <Col className="lcm-domain-segment" sm={2}>
                 <p>
-                    {client_count} Clients<br/>
+                     Clients<br/>
                     {count} Users<br/>
-                    8723 reports in 24 hours<br/>
-                    11243 filters in 24 hours<br/>
-                </p>
-            </Col>
-            <Col className="lcm-domain-segment" sm={2}>
-                <p>
-                    {client_count} Clients<br/>
-                    {count} Users<br/>
-                    8723 reports in 24 hours<br/>
-                    11243 filters in 24 hours<br/>
+                    8512 reports today.<br/>
+                    11243 filters today.<br/>
                 </p>
             </Col>
         </Row>
-
-                <ContentBox><iframe frameBorder="0" src="https://secure.gooddata.com/dashboard.html?label.csv_demodata_c.region=Southwest#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&dashboard=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/4912&tab=b6658b7a1cbd&nochrome=true" width="87%" height="380px" allowTransparency="false"></iframe></ContentBox>
+            <Row>
+                <Col sm={2}></Col>
+                <Col sm={8}>
+                    <iframe frameBorder="0" src="https://secure.gooddata.com/reportWidget.html#project=/gdc/projects/u72gr8lshicm52o96ntcju2m0n542vdh&report=/gdc/md/u72gr8lshicm52o96ntcju2m0n542vdh/obj/5541&title=no&transparentBackground=yes" width="100%" height="200px" allowTransparency="true"></iframe>
+            </Col>
+            </Row>
         </AppFS>
     }
 }
