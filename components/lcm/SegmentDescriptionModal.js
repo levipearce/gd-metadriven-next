@@ -9,7 +9,7 @@ function DescriptionModal(props)
 
                     <Modal show={props.obj.state.showModal} onHide={props.obj.close}>
                         <Modal.Header closeButton>
-                            <Modal.Title>Data Product Description</Modal.Title>
+                            <Modal.Title>Basic Product Description</Modal.Title>
                         </Modal.Header>
                         <Modal.Body>Body
                         </Modal.Body>
